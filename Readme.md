@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Evgeniya Selyunina](https://up.htmlacademy.ru/adaptive/9/user/110039).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мусаэльян](https://up.htmlacademy.ru/adaptive/9/user/124940).
 
 ---
 
