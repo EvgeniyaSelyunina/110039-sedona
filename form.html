@@ -18,7 +18,7 @@
           </ul>
         </nav>
         <div class="logo">
-          <a class="logo__link">
+          <a class="logo__link href="#"">
             <img class="logo__picture" src="http://placehold.it/150x100" alt="Седона" width="" height="">
           </a>
         </div>
@@ -29,9 +29,9 @@
       <section class="feedback">
         <div class="feedback__lead">
           <h1 class="feedback__title">Оставьте свой отзыв</h1>
-          <h2 class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</h2>
+          <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
-        <form action="" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <div class="feedback-form">
             <div class="feedback-form__group">
               <div class="feedback-form__legend">Представьтесь:</div>
@@ -53,14 +53,14 @@
               <div class="feedback-form__item">
                 <div class="feedback-form__line">
                   <label for="phone">Контактный телефон*:</label>
+                  <input id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
                 </div>
-                <input id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
               </div>
               <div class="feedback-form__item">
                 <div class="feedback-form__line">
                   <label for="email">Электронная почта*:</label>
+                  <input id="email" type="email" name="email" placeholder="Введите e-mail" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
                 </div>
-                <input id="email" type="email" name="email" placeholder="Введите e-mail" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
               </div>
             </div>
             <div class="feedback-form__group">
@@ -81,19 +81,19 @@
             <div class="feedback-form__group">
               <div class="feedback-form__legend">Посещенные достопримечательности:</div>
               <div class="feedback-form__item">
-                <input id="bridge" type="checkbox" name="place" value="bridge" checked>
+                <input id="bridge" type="checkbox" name="bridge" value="bridge" checked>
                 <label for="bridge">Мост Дьявола</label>
               </div>
               <div class="feedback-form__item">
-                <input id="park" type="checkbox" name="place" value="park" checked>
+                <input id="park" type="checkbox" name="park" value="park" checked>
                 <label for="park">Слайд-парк</label>
               </div>
               <div class="feedback-form__item">
-                <input id="mount" type="checkbox" name="place" value="mount">
+                <input id="mount" type="checkbox" name="mount" value="mount">
                 <label for="mount">Гора-Колокол</label>
               </div>
               <div class="feedback-form__item">
-                <input id="rock" type="checkbox" name="place" value="rock" checked>
+                <input id="rock" type="checkbox" name="rock" value="rock" checked>
                 <label for="rock">Красные скалы</label>
               </div>
             </div>
@@ -121,6 +121,22 @@
           </a>
         </div>
       </footer>
+      <div class="popup">
+        <div class="popup-failure">
+          <div class="popup-failure__title">Что-то пошло не так!</div>
+          <p class="popup-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <div class="popup__btn">
+            <a href="#" class="btn">ОК</a>
+          </div>
+        <div>
+        <div class="popup-success">
+          <div class="popup-success__title">Ваш отзыв отправлен!</div>
+          <p class="popup-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="popup__btn">
+            <a href="#" class="btn">Закрыть окно</a>
+          </div>
+        <div>
+      </div>
     </div>
   </body>
 </html>
