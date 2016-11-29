@@ -12,7 +12,7 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu-item"><a href="#" class="menu__link">Главная</a></li>
-            <li class="menu-item"><a href="#" class="menu__link--active">Фото и Видео</a></li>
+            <li class="menu-item"><a class="menu__link--active">Фото и Видео</a></li>
             <li class="menu-item"><a href="#" class="menu__link">Форма отзыва</a></li>
             <li class="menu-item"><a href="#" class="menu__link">HTML Academy</a></li>
           </ul>
@@ -32,54 +32,46 @@
           <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
         <div class="photos">
-          <div class="photo">
-            <figure class="photo__image">
-              <a class="photo__link">
-                <img class="photo__picture" src="http://placehold.it/150x100" alt="Неродные просторы" width="" height="">
-              </a>
-            </figure>
+          <figure class="photo">
+            <a class="photo__link">
+              <img class="photo__picture" src="http://placehold.it/150x100" alt="Неродные просторы" width="" height="">
+            </a>
             <figcaption class="photo__info">
               <div class="photo__title">Неродные просторы</div>
               <div class="photo__author">Автор фото: Борис</div>
               <div class="photo__like">1350</div>
             </figcaption>
-          </div>
-          <div class="photo">
-            <figure class="photo__image">
-              <a class="photo__link">
-                <img class="photo__picture" src="http://placehold.it/150x100" alt="Местная растительность" width="" height="">
-              </a>
-            </figure>
+          </figure>
+          <figure class="photo">
+            <a class="photo__link">
+              <img class="photo__picture" src="http://placehold.it/150x100" alt="Местная растительность" width="" height="">
+            </a>
             <figcaption class="photo__info">
               <div class="photo__title">Местная растительность</div>
               <div class="photo__author">Автор фото: Сергей</div>
               <div class="photo__like">143</div>
             </figcaption>
-          </div>
-          <div class="photo">
-            <figure class="photo__image">
-              <a class="photo__link">
-                <img class="photo__picture" src="http://placehold.it/150x100" alt="Дорога на север" width="" height="">
-              </a>
-            </figure>
+          </figure>
+          <figure class="photo">
+            <a class="photo__link">
+              <img class="photo__picture" src="http://placehold.it/150x100" alt="Дорога на север" width="" height="">
+            </a>
             <figcaption class="photo__info">
               <div class="photo__title">Дорога на север</div>
               <div class="photo__author">Автор фото: Петр</div>
               <div class="photo__like">96</div>
             </figcaption>
-          </div>
-          <div class="photo">
-            <figure class="photo__image">
-              <a class="photo__link">
-                <img class="photo__picture" src="http://placehold.it/150x100" alt="Мост Дьявола" width="" height="">
-              </a>
-            </figure>
+          </figure>
+          <figure class="photo">
+            <a class="photo__link">
+              <img class="photo__picture" src="http://placehold.it/150x100" alt="Мост Дьявола" width="" height="">
+            </a>
             <figcaption class="photo__info">
               <div class="photo__title">Мост Дьявола</div>
               <div class="photo__author">Автор фото: Антон</div>
               <div class="photo__like">254</div>
             </figcaption>
-          </div>
+          </figure>
         </div>
       </section>
       <div class="presentation">
@@ -87,19 +79,24 @@
         <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
       <div class="video">Видео
+        <div class="video__controller">
+          <div class="video__line">
+            <div class="video__check"></div>
+          </div>
+        </div>
         <button class="video__replay"></button>
         <button class="video__subtitles"></button>
         <button class="video__full-screen"></button>
       </div>
       <footer class="page-footer">
-        <div class="hashtag">#visitsedona</div>
+        <a href="#" class="hashtag">#visitsedona</a>
         <div class="social">
             <a class="social__btn" href="#">Twitter</a>
             <a class="social__btn" href="#">Facebook</a>
             <a class="social__btn" href="#">YouTube</a>
         </div>
         <div class="copyright">
-          <p class="copyright__text">Разработано</p>
+          <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/">
             <img class="copyright__logo" src="http://placehold.it/150x100" alt="HTML Academy" width="" height="">
           </a>
