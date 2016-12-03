@@ -1,28 +1,8 @@
 @import "normalize.scss";
-
-@font-face {
-  font-family: 'PT Sans';
-}
-
-body {
-  min-width: 320px;
-  background-color: $white;
-  color: #333333;
-  margin: 0px;
-  padding: 0px;
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-style: normal;
-}
-
-.wrapper {
-  width: 320px;
-  background: white;
-  margin: 0 auto;
-}
-
 @import "variables.scss";
+@import "mixins.scss";
+
+@import "global/fonts.scss";
 
 @import "blocks/page-header.scss";
 @import "blocks/menu.scss";
@@ -45,3 +25,22 @@ body {
 @import "blocks/video.scss";
 
 @import "blocks/popup";
+
+
+body {
+  min-width: 320px;
+  background-color: $white;
+  color: #333333;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+}
+
+.wrapper {
+  width: 320px;
+  background: white;
+  margin: 0 auto;
+}
