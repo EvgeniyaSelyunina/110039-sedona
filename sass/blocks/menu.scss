@@ -1,0 +1,30 @@
+.menu{
+  width: 320px;
+  text-align: center;
+}
+
+.menu__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.menu__item{
+  background-color:$blue;
+  list-style: none;
+  font-size: 18px;
+  line-height: 40px;
+  border-bottom: 1px solid #678fa8;
+}
+
+.menu__link{
+  color: $white;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu__link--active {
+}
