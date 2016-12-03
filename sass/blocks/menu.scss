@@ -1,0 +1,29 @@
+@import "../variables.scss";
+
+.menu{
+  width: 320px;
+  text-align: center;
+}
+
+.menu__list{
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.menu__item{
+  background-color:$blue;
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px solid $gray;
+}
+
+.menu__link{
+  color: $white;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  text-decoration: none;
+}
+
+.menu__link--active {
+}
