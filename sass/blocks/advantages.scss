@@ -1,3 +1,12 @@
-advantages__header{
+.advantages__header{
   padding: 46px 0px 51px 16px;
+}
+
+.advantages__title {
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+}
+
+.advantages__text {
+  font-size: $text-font-size;
 }
