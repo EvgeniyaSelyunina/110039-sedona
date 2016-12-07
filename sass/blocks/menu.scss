@@ -1,29 +1,49 @@
-@import "../variables.scss";
-
 .menu{
-  width: 320px;
-  text-align: center;
+  position: relative;
+  width: auto;
+  min-height: 56px;
+  background-color:$blue;
+  margin-bottom: 50px;
+
+  @media ($tablet-widths) {
+    width: auto;
+    min-height: 56px;
+    margin: 0;
+    background-color:$white;
+    margin-bottom: 0px;
+  }
 }
 
 .menu__list{
   padding: 0;
   list-style: none;
   font-size: 0;
+  @media ($tablet-widths) {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+  }
+
 }
 
 .menu__item{
-  background-color:$blue;
   text-align: center;
   line-height: 40px;
+  margin: 0;
+  padding: 0;
   border-bottom: 1px solid $gray;
+  color: $white;
+  @media ($tablet-widths) {
+      background-color: $white;
+      border-bottom:none;
+  }
 }
 
 .menu__link{
   color: $white;
   font-size: $title-font-size;
-  font-weight: $title-font-weight;
   text-decoration: none;
-}
-
-.menu__link--active {
+  @media ($tablet-widths) {
+      color: black;
+  }
 }

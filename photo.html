@@ -8,11 +8,11 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <button class="hamburger" type="button">Открыть меню</button>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-            <li class="menu__item"><a class="menu__link--active">Фото и Видео</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--active">Фото и Видео</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Форма отзыва</a></li>
             <li class="menu__item"><a href="#" class="menu__link">HTML Academy</a></li>
           </ul>
@@ -32,13 +32,15 @@
           <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
         <div class="photos">
-          <figure class="photo">
+          <figure class="photo photo--base">
             <a class="photo__link">
               <img class="photo__picture" src="img/photo-1-mobile@1x.jpg" alt="Неродные просторы" height="280" width="280">
             </a>
             <figcaption class="photo__info">
-              <div class="photo__title">Неродные просторы</div>
-              <div class="photo__author">Автор фото: Борис</div>
+              <div class="photo__left">
+                <div class="photo__title">Неродные просторы</div>
+                <div class="photo__author">Автор фото: Борис</div>
+              </div>
               <div class="photo__like">1350</div>
             </figcaption>
           </figure>
@@ -47,8 +49,10 @@
               <img class="photo__picture" src="img/photo-2-mobile@1x.jpg" alt="Местная растительность" width="280" height="280">
             </a>
             <figcaption class="photo__info">
-              <div class="photo__title">Местная растительность</div>
-              <div class="photo__author">Автор фото: Сергей</div>
+              <div class="photo__left">
+                <div class="photo__title">Местная растительность</div>
+                <div class="photo__author">Автор фото: Сергей</div>
+              </div>
               <div class="photo__like">143</div>
             </figcaption>
           </figure>
@@ -57,8 +61,10 @@
               <img class="photo__picture" src="img/photo-3-mobile@1x.jpg" alt="Дорога на север" width="280" height="280">
             </a>
             <figcaption class="photo__info">
-              <div class="photo__title">Дорога на север</div>
-              <div class="photo__author">Автор фото: Петр</div>
+              <div class="photo__left">
+                <div class="photo__title">Дорога на север</div>
+                <div class="photo__author">Автор фото: Петр</div>
+              </div>
               <div class="photo__like">96</div>
             </figcaption>
           </figure>
@@ -67,8 +73,10 @@
               <img class="photo__picture" src="img/photo-4-mobile@1x.jpg" alt="Мост Дьявола" width="280" height="280">
             </a>
             <figcaption class="photo__info">
-              <div class="photo__title">Мост Дьявола</div>
-              <div class="photo__author">Автор фото: Антон</div>
+              <div class="photo__left">
+                <div class="photo__title">Мост Дьявола</div>
+                <div class="photo__author">Автор фото: Антон</div>
+              </div>
               <div class="photo__like">254</div>
             </figcaption>
           </figure>

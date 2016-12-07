@@ -2,9 +2,13 @@
 $blue: #81b3d2;
 $blue--active: #5496bd;
 $white: #ffffff;
-$lightgray:#eeeeee;
-$gray:#678fa8;
+$lightgray: #eeeeee;
+$gray: #678fa8;
 
 /* fonts */
-$title-font-size:18px;
-$text-font-size:14px;
+$title-font-size: 18px;
+$text-font-size: 14px;
+
+$mobile-widths-only: "max-width: 767px";
+$tablet-widths: "min-width: 768px";
+$desktop-widths: "min-width: 1200px";

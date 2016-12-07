@@ -1,7 +1,6 @@
-@import "normalize.scss";
-@import "variables.scss";
-@import "mixins.scss";
-
+@import "global/normalize.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
 @import "global/fonts.scss";
 
 @import "blocks/page-header.scss";
@@ -37,10 +36,31 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
+  min-width: 320px;
+  text-align: center;
+  @media ($tablet-widths) {
+    min-width: 100%;
+  }
+  @media ($desktop-widths) {
+    min-width: 1200px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .wrapper {
-  width: 320px;
-  background: white;
+  @include container-fluid();
+  /*width: 320px;
   margin: 0 auto;
+
+  @media ($tablet-widths) {
+   width: 768px;
+  }
+
+  @media ($desktop-widths) {
+   width: 1200px;
+ }*/
 }

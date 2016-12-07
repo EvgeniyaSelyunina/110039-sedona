@@ -1,0 +1,15 @@
+@mixin title() {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin container-fluid() {
+  width: auto;
+
+  @media ($tablet-widths) {
+    width: 88%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}

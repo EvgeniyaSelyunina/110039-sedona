@@ -2,11 +2,17 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $blue;
+  background-position: center;
+  width: 100%;
+  background-position: center 0px;
+  background-size: cover;
+
 }
 
 .promo__image{
   width: 280px;
   height: 214px;
-  padding-top: 90px;
-  padding-bottom: 85px;
+  margin-top: 90px;
+  margin-bottom: 86px;
+  background-size: cover
 }
