@@ -1,0 +1,12 @@
+.feedback__lead{
+  @media ($tablet-widths) {
+    padding: 20px 150px;
+  }
+}
+
+.feedback-form__group{
+  @media ($tablet-widths) {
+    width: 370px;
+    margin: 30px 0px;
+  }
+}

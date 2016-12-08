@@ -1,3 +1,15 @@
 .map{
-  background-color: $blue url("../img/bg-map-mobile@1x.jpg") center center no-repeat;
+  background-color: $blue;
+    width: 320;
+    height: 348px;
+
+  @media ($tablet-widths) {
+    width: auto;
+    height: 348px;
+  }
+
+  @media ($desktop-widths) {
+    width: auto;
+    height: 348px;
+  }
 }

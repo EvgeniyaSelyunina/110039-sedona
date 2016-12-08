@@ -1,11 +1,22 @@
-.advantages__header{
-  padding: 46px 0px 51px 16px;
+.advantages__header {
+  @media ($tablet-widths) {
+    margin: 30px 50px;
+  }
 }
 
 .advantages__title {
   font-size: $title-font-size;
+  @media ($tablet-widths) {
+   margin: 0px 162px;
+  }
+  @media ($desktop-widths) {
+    margin: 0px 250px;
+  }
 }
 
 .advantages__text {
   font-size: $text-font-size;
+  @media ($tablet-widths) {
+    margin-bottom: 45px;
+  }
 }
