@@ -17,14 +17,21 @@
 
 .page-header__toggle{
   position: absolute;
-  top: 0;
+  top: 195px;
   right: 0;
   z-index: 2;
   display: block;
   width: 60px;
-  min-height: 55px;
+  min-height: 50px;
   font-size: 0;
   background-color: #e5f2fa;
   cursor: pointer;
   border: none;
+  @media ($tablet-widths) {
+      display: none;
+  }
+
+  @media ($desktop-widths) {
+      display: none;
+  }
 }

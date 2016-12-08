@@ -3,13 +3,16 @@
   width: auto;
   min-height: 56px;
   background-color:$blue;
-  margin-bottom: 50px;
+  margin-bottom: 65px;
 
   @media ($tablet-widths) {
     width: auto;
-    min-height: 56px;
     margin: 0;
     background-color:$white;
+    margin-bottom: 0px;
+  }
+
+  @media ($desktop-widths) {
     margin-bottom: 0px;
   }
 }
