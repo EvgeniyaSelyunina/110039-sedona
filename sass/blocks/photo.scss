@@ -1,32 +1,67 @@
 .photo{
   @media ($tablet-widths) {
-    width: 420px;
     margin: 0px;
     padding: 0px;
+    &--base{
+      width: 100%;
+    }
+    &--table{
+      width: 50%;
+    }
   }
   @media ($desktop-widths) {
-    width: 300px;
     margin: 0px;
     padding: 0px;
+    &--base{
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+    &--table{
+      width: 33.333333%;
+    }
   }
 }
 
-.photo--base{
-  @media ($tablet-widths) {
-    width: 960px;
-  }
-
-  @media ($desktop-widths) {
-    width: 1200px;
-    margin: 0px;
-    padding: 0px;
-  }
+.photo__picture{
+  padding: 20px 0px;
 }
 
 .photo__info{
+  text-align:left;
   @media ($tablet-widths) {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
+  }
+}
+
+.photo__title{
+  line-height: 24px;
+  font-weight:bold;
+  padding-bottom: 5px;
+}
+
+.photo__like{
+  position: relative;
+  display: block;
+  padding: 5px 20px 0px 35px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+  @media ($tablet-widths) {
+    padding-right: 30px;
+    padding-top: 10px;
+    &::before {
+      top: 8px;
+    }
   }
 }
