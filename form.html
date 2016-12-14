@@ -8,17 +8,17 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <button class="page-header__toggle" type="button">Открыть меню</button>
-        <nav class="menu">
+        <nav class="menu menu--closed menu--nojs">
+          <button class="menu__toggle" type="button"></button>
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Фото и Видео</a></li>
-            <li class="menu__item"><a class="menu__link menu__link--active">Форма отзыва</a></li>
+            <li class="menu__item"><a  href="index.html" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a href="photo.html" class="menu__link">Фото и Видео</a></li>
+            <li class="menu__item menu__item--active"><a class="menu__link">Форма отзыва</a></li>
             <li class="menu__item"><a href="#" class="menu__link">HTML Academy</a></li>
           </ul>
         </nav>
         <div class="logo">
-          <a class="logo__link href="#"">
+          <a class="logo__link" href="index.html">
             <img class="logo__picture" src="img/logo-sedona-mobile.svg" alt="Седона">
           </a>
         </div>
@@ -35,35 +35,35 @@
           <div class="feedback-form__group">
             <div class="feedback-form__legend">Представьтесь:</div>
             <div class="feedback-form__item">
-              <label for="name">Имя</label>
-              <input type="text" placeholder="Петр" id="name" required>
+              <label for="name">Имя*:</label>
+              <input class="feedback-form__name" type="text" placeholder="Петр" id="name" required>
             </div>
             <div class="feedback-form__item">
               <label for="name">Фамилия*:</label>
-              <input type="text" placeholder="Иванов" id="name" required>
+              <input class="feedback-form__name" type="text" placeholder="Иванов" id="name" required>
             </div>
             <div class="feedback-form__item">
               <label for="name">Отчество:</label>
-              <input type="text" placeholder="Александрович" id="name" required>
+              <input class="feedback-form__name" type="text" placeholder="Александрович" id="name" required>
             </div>
           </div>
-          <div class="feedback-form__group feedback-form__group--big">
+          <div class="feedback-form__group feedback-form__group--contacts">
             <div class="feedback-form__legend">Контактная информация:</div>
             <div class="feedback-form__item">
-              <div class="feedback-form__line">
-                <label for="phone">Контактный телефон*:</label>
+              <label for="phone">Контактный телефон*:</label>
+              <div class="feedback-form__long">
                 <input id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
-                <span class="feedback-form__check">Ошибка, перепроверьте номер</span>
               </div>
+              <span class="feedback-form__check">Ошибка, перепроверьте номер</span>
             </div>
             <div class="feedback-form__item">
-              <div class="feedback-form__line">
-                <label for="email">Электронная почта*:</label>
-                <input id="email" type="email" name="email" placeholder="Введите e-mail" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+              <label for="email">Электронная почта*:</label>
+              <div class="feedback-form__long">
+                <input id="email" type="email" name="email" placeholder="Введите e-mail" required>
               </div>
             </div>
           </div>
-          <div class="feedback-form__group feedback-form__group--first">
+          <div class="feedback-form__group feedback-form__group--feeling">
             <div class="feedback-form__legend">Ваше общее впечатление:</div>
             <div class="feedback-form__item">
               <input id="positive" type="radio" name="emotion" value="positive" checked>
@@ -81,57 +81,73 @@
           <div class="feedback-form__group feedback-form__group--place">
             <div class="feedback-form__legend">Посещенные достопримечательности:</div>
             <div class="feedback-form__level">
-            <div class="feedback-form__item">
-              <input id="bridge" type="checkbox" name="bridge" value="bridge" checked>
-              <label for="bridge">Мост Дьявола</label>
-            </div>
-            <div class="feedback-form__item">
-              <input id="park" type="checkbox" name="park" value="park" checked>
-              <label for="park">Слайд-парк</label>
-            </div>
-            <div class="feedback-form__item">
-              <input id="mount" type="checkbox" name="mount" value="mount">
-              <label for="mount">Гора-Колокол</label>
-            </div>
-            <div class="feedback-form__item">
-              <input id="rock" type="checkbox" name="rock" value="rock" checked>
-              <label for="rock">Красные скалы</label>
+              <div class="feedback-form__item feedback-form__item--order">
+                <input id="bridge" type="checkbox" name="place" value="bridge" checked>
+                <label for="bridge">Мост Дьявола</label>
+              </div>
+              <div class="feedback-form__item feedback-form__item--order">
+                <input id="park" type="checkbox" name="place" value="park" checked>
+                <label for="park">Слайд-парк</label>
+              </div>
+              <div class="feedback-form__item feedback-form__item--order">
+                <input id="mount" type="checkbox" name="place" value="mount">
+                <label for="mount">Гора-Колокол</label>
+              </div>
+              <div class="feedback-form__item feedback-form__item--order">
+                <input id="rock" type="checkbox" name="place" value="rock" checked>
+                <label for="rock">Красные скалы</label>
+              </div>
             </div>
           </div>
-          </div>
-          <div class="feedback-form__group feedback-form__group--comment">
+          <div class="feedback-form__group">
             <div class="feedback-form__legend">Опишите свои эмоции:</div>
-            <div class="feedback-form__item">
-              <textarea name="text-letter" required>Опишите подробно все свои восторги</textarea>
+            <div class="feedback-form__item feedback-form__item--comment">
+              <textarea class="feedback-form__comment" name="text-letter" required>Опишите подробно все свои восторги</textarea>
             </div>
           </div>
-          <button class="btn" type="submit">Отправить отзыв</button>
+          <button class="feedback-form__btn" type="submit">Отправить отзыв</button>
         </form>
       </section>
       <footer class="page-footer">
-        <a href="#" class="hashtag">#visitsedona</a>
+        <div href="#" class="hashtag">#visitsedona</div>
         <div class="social">
-            <a class="social__btn" href="#">Twitter</a>
-            <a class="social__btn" href="#">Facebook</a>
-            <a class="social__btn" href="#">YouTube</a>
+            <a class="social__btn social__btn--tw" href="#">Twitter</a>
+            <a class="social__btn social__btn--fb" href="#">Facebook</a>
+            <a class="social__btn social__btn--tube" href="#">YouTube</a>
         </div>
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/">
-            <img class="copyright__logo" src="img/logo-htmlacademy.svg" alt="HTML Academy">
+            <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
           </a>
         </div>
       </footer>
-      <div class="popup popup--failure">
-        <div class="popup__title">Что-то пошло не так!</div>
-        <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <a href="#" class="btn">ОК</a>
-      </div>
-      <div class="popup popup--success">
-        <div class="popup__title">Ваш отзыв отправлен!</div>
-        <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <a href="#" class="btn">Закрыть окно</a>
-      </div>
     </div>
+    <div class="popup-failure">
+      <div class="popup-failure__title">Что-то пошло не так!</div>
+      <p class="popup-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popup-failure__btn">OK</button>
+    </div>
+    <div class="popup-success">
+      <div class="popup-success__title">Ваш отзыв отправлен!</div>
+      <p class="popup-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="popup-success__btn">Закрыть окно</button>
+    </div>
+    <script>
+    var navMain = document.querySelector('.menu');
+    var navToggle = document.querySelector('.menu__toggle');
+
+    navMain.classList.remove('menu--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('menu--closed')) {
+        navMain.classList.remove('menu--closed');
+        navMain.classList.add('menu--opened');
+      } else {
+        navMain.classList.add('menu--closed');
+        navMain.classList.remove('menu--opened');
+      }
+    });
+    </script>
   </body>
 </html>

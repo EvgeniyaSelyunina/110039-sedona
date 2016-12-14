@@ -1,24 +1,76 @@
 .menu{
   position: relative;
   width: auto;
-  min-height: 56px;
   background-color:$blue;
-  margin-bottom: 65px;
 
   @media ($tablet-widths) {
     width: auto;
     margin: 0;
     background-color:$white;
-    margin-bottom: 0px;
   }
 
   @media ($desktop-widths) {
-    margin-bottom: 0px;
   }
 }
 
-.menu__list{
+.menu--closed .menu__toggle{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../img/icon-menu.svg");
+  background-color:$white;
+  @media ($tablet-widths) {
+     display: none;
+  }
+  @media ($desktop-widths) {
+     display: none;
+  }
+}
+
+.menu--opened .menu__toggle {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+    background-image: url("../img/icon-cross.svg");
+    background-color:$blue;
+    @media ($tablet-widths) {
+       display: none;
+    }
+    @media ($desktop-widths) {
+       display: none;
+    }
+}
+
+.menu--closed .menu__item {
+   @media ($mobile-widths-only) {
+      display: none;
+   }
+}
+
+.menu--nojs .menu__toggle{
+   @media ($mobile-widths-only){
+      display: none;
+    }
+}
+
+.menu--nojs .menu__item{
+   @media ($mobile-widths-only){
+      display: block;
+    }
+}
+
+.menu__list {
   padding: 0;
+  margin: 0;
   list-style: none;
   font-size: 0;
   @media ($tablet-widths) {
@@ -29,24 +81,64 @@
 
 }
 
-.menu__item{
+.menu__item {
   text-align: center;
   line-height: 40px;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid $gray;
   color: $white;
-  @media ($tablet-widths) {
-      background-color: $white;
-      border-bottom:none;
+  padding: 7px 0;
+  @media ($mobile-widths-only){
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+      color: #88b6d1;
+    }
+    &--active {
+      &:hover,
+      &:active {
+        background-color: #81b3d2;
+        color: $white;
+     }
+    }
   }
-}
+    @media ($tablet-widths) {
+        background-color: $white;
+        border-bottom:none;
+        width: 20%;
+          &:nth-child(2) {
+            margin-right: 20%;
+        }
+        &--active {
+          color: #b6aca5;
+          &:hover{
+            color: #604e43;
+          }
+          &:active {
+            color: #d6d0cc;
+         }
+       }
+    }
+  }
 
-.menu__link{
+.menu__link {
   color: $white;
   font-size: $title-font-size;
   text-decoration: none;
+  font-size: $title-font-size;
+  line-height: 40px;
+  font-weight: bold;
   @media ($tablet-widths) {
       color: black;
+      line-height: 26px;
+      &:hover {
+      color: #81b3d2;
+      }
+      &:active {
+      color: #b2b2b2;
+      }
   }
 }

@@ -8,17 +8,17 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <button class="page-header__toggle" type="button">Открыть меню</button>
-        <nav class="menu">
+        <nav class="menu menu--closed menu--nojs">
+          <button class="menu__toggle" type="button"></button>
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-            <li class="menu__item"><a class="menu__link menu__link--active">Фото и Видео</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Форма отзыва</a></li>
+            <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+            <li class="menu__item menu__item--active"><a class="menu__link">Фото и Видео</a></li>
+            <li class="menu__item"><a href="form.html" class="menu__link">Форма отзыва</a></li>
             <li class="menu__item"><a href="#" class="menu__link">HTML Academy</a></li>
           </ul>
         </nav>
         <div class="logo">
-          <a class="logo__link" href="#">
+          <a class="logo__link" href="index.html">
             <img class="logo__picture" src="img/logo-sedona-mobile.svg" alt="Седона">
           </a>
         </div>
@@ -44,7 +44,7 @@
               <div class="photo__like">1350</div>
             </figcaption>
           </figure>
-          <figure class="photo">
+          <figure class="photo photo--table">
             <a class="photo__link">
               <img class="photo__picture" src="img/photo-2-mobile@1x.jpg" alt="Местная растительность" width="280" height="280">
             </a>
@@ -56,7 +56,7 @@
               <div class="photo__like">143</div>
             </figcaption>
           </figure>
-          <figure class="photo">
+          <figure class="photo photo--table">
             <a class="photo__link">
               <img class="photo__picture" src="img/photo-3-mobile@1x.jpg" alt="Дорога на север" width="280" height="280">
             </a>
@@ -68,7 +68,7 @@
               <div class="photo__like">96</div>
             </figcaption>
           </figure>
-          <figure class="photo">
+          <figure class="photo photo--table">
             <a class="photo__link">
               <img class="photo__picture" src="img/photo-4-mobile@1x.jpg" alt="Мост Дьявола" width="280" height="280">
             </a>
@@ -86,7 +86,8 @@
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
         <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
-      <div class="video">Видео
+      <div class="video">
+        <img class="video__image" src="img/video-mobile@1x.jpg" alt="Sedona">
         <div class="video__controller">
           <div class="video__line">
             <div class="video__check"></div>
@@ -97,19 +98,35 @@
         <button class="video__full-screen"></button>
       </div>
       <footer class="page-footer">
-        <a href="#" class="hashtag">#visitsedona</a>
+        <div href="#" class="hashtag">#visitsedona</div>
         <div class="social">
-            <a class="social__btn" href="#">Twitter</a>
-            <a class="social__btn" href="#">Facebook</a>
-            <a class="social__btn" href="#">YouTube</a>
+            <a class="social__btn social__btn--tw" href="#">Twitter</a>
+            <a class="social__btn social__btn--fb" href="#">Facebook</a>
+            <a class="social__btn social__btn--tube" href="#">YouTube</a>
         </div>
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/">
-            <img class="copyright__logo" src="img/logo-htmlacademy.svg" alt="HTML Academy">
+            <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
           </a>
         </div>
       </footer>
     </div>
+    <script>
+    var navMain = document.querySelector('.menu');
+    var navToggle = document.querySelector('.menu__toggle');
+
+    navMain.classList.remove('menu--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('menu--closed')) {
+        navMain.classList.remove('menu--closed');
+        navMain.classList.add('menu--opened');
+      } else {
+        navMain.classList.add('menu--closed');
+        navMain.classList.remove('menu--opened');
+      }
+    });
+    </script>
   </body>
 </html>

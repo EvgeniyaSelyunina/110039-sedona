@@ -1,18 +1,63 @@
 .social{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items:center;
+  font-size: 0px;
+  margin: 0 auto;
+  margin-top: 39px;
+  margin-bottom: 38px;
+  width: 156px;
+  @media ($tablet-widths) {
+    width: 155px;
+  }
 }
 
 .social__btn{
-  vertical-align: top;
+  position: relative;
+  width: 47px;
+  height: 48px;
+  background-color: $blue;
   font-size: 0;
-    &--tw {
-    }
+  &:hover{
+    background-color: #669ec0;
+  }
+  &:active{
+    background-color: #5496bd;
+  }
+}
 
-    &--fb {
-    }
+.social__btn--tw {
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+	background-position: 50% 50%;
+  &:hover,
+  &:active{
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+  	background-position: 50% 50%;
+  }
+}
 
-    &--tube {
-    }
+.social__btn--fb {
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+	background-position: 50% 50%;
+  &:hover,
+  &:active{
+    background-image: url("../img/icon-facebook.svg");
+    background-repeat: no-repeat;
+  	background-position: 50% 50%;
+  }
+}
+
+.social__btn--tube {
+  background-image: url("../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+	background-position: 50% 50%;
+  &:hover,
+  &:active{
+    background-image: url("../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+  	background-position: 50% 50%;
+  }
 }
