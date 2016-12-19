@@ -3,6 +3,10 @@
     background-color:$lightgray;
     text-align: center;
   }
+  &--icons{
+    margin-top: 25px;
+    margin-bottom: 43px;
+  }
   @media ($tablet-widths) {
     display: flex;
     justify-content: space-between;
@@ -15,9 +19,18 @@
   &--blue{
     background-color:$blue;
     color: $white;
-    padding: 35px 90px;
+    padding: 40px 90px;
+    padding-top: 60px;
     @media ($tablet-widths) {
-      padding: 35px 90px;
+      padding: 46px 50px;
+      width: 33.333333%;
+      height: 164px;
+      margin: 0px auto;
+    }
+    @media ($desktop-widths) {
+      min-height: 400px;
+      padding: 0px 50px;
+      vertical-align: middle;
     }
   }
   &--first{
@@ -28,19 +41,59 @@
   &--gray{
     padding: 30px 30px;
     @media ($tablet-widths) {
-      padding: 45px 30px;
+      padding: 45px 47px;
       width: 33.333333%;
+    }
+    @media ($tablet-widths) {
+      padding: 50px 66px;
+    }
+  }
+  &--image{
+    width: 100%;
+    @media ($tablet-widths) {
+     width: 66.666666%;
+     margin: 0 auto;
+   }
+  }
+  &--icon{
+    padding-left: 20px;
+    text-align: left;
+    @media ($tablet-widths) {
+      text-align: center;
+      padding: 50px 40px;
     }
   }
 }
 
+.advantage__item--triangle{
+    position: relative;
+    &:after {
+     content: "";
+     position: absolute;
+     display: block;
+     width: 100%;
+     height: 46px;
+     top: -22px;
+     right: -10px;
+     background-image: url("../img/bg-triangle.svg");
+     background-position: top;
+     background-repeat: no-repeat;
+     @media ($tablet-widths) {
+       display: none;
+     }
+     @media ($desktop-widths) {
+       display: none;
+     }
+    }
+}
+
 .advantage__item--gray:first-child{
-  &::after{
+  &:after{
   content: "";
   position: relative;
   display: block;
   top: 30px;
-  border-bottom: 2px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
     @media ($tablet-widths) {
       display: none;
     }
@@ -48,28 +101,19 @@
 }
 
 .advantage__item--gray:last-child{
-  &::after{
+  &:after{
   content: "";
   position: relative;
   bottom: 150px;
   display: block;
-  border-top: 2px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
     @media ($tablet-widths) {
       display: none;
     }
   }
 }
 
-.advantage-icon{
-  padding-left: 20px;
-  text-align: left;
-  @media ($tablet-widths) {
-    text-align: center;
-    padding: 50px 40px;
-  }
-}
-
-.advantage-icon__title{
+.advantage__title--icon{
   line-height: 26px;
   padding-left: 90px;
   padding-top: 30px;
@@ -84,30 +128,33 @@
     padding-left: 0px;
     padding-bottom: 0px;
   }
-  &--house{
+}
+
+.advantage__title{
+  &--house {
     background-image: url("../img/icon-house.svg");
 	  background-position: left;
-    @media ($tablet-widths) {
-      background-position: top;
-    }
+      @media ($tablet-widths) {
+        background-position: top;
+      }
   }
-  &--souvenirs{
+  &--souvenirs {
     background-image: url("../img/icon-gift.svg");
 	  background-position: left;
-    @media ($tablet-widths) {
-      background-position: top;
-    }
+      @media ($tablet-widths) {
+        background-position: top;
+      }
   }
-  &--food{
+  &--food {
     background-image: url("../img/icon-burger.svg");
 	  background-position: left;
-    @media ($tablet-widths) {
-      background-position: top;
-    }
+      @media ($tablet-widths) {
+        background-position: top;
+      }
   }
 }
 
-.advantage-icon__text{
+.advantage__text--icon{
   font-size: $text-font-size;
   text-align: left;
   padding-left: 90px;

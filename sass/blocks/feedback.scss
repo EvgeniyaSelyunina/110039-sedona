@@ -1,13 +1,14 @@
-.feedback__lead{
-  padding: 0px 40px;
+.feedback{
+  padding: 0px 30px;
   @media ($tablet-widths) {
-      padding: 0px 120px;
+      margin: 75px 0;
   }
 }
 
-.feedback-form__group{
+.feedback__lead{
+  padding-top: 40px;
+  padding-bottom: 20px;
   @media ($tablet-widths) {
-    width: 370px;
-    margin: 30px 0px;
+      padding: 0px 120px;
   }
 }

@@ -2,7 +2,7 @@
   display: none;
   position: fixed;
   box-sizing: border-box;
-  padding-top: 70px;
+  padding-top: 45px;
   width: 320px;
   height: 280px;
   top: 50%;
@@ -27,6 +27,9 @@
   text-align: center;
   margin-bottom: 20px;
   padding: 0 60px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
   @media ($tablet-widths) {
     padding: 0 80px;
     margin-bottom: 25px;
@@ -45,7 +48,7 @@
 
 .popup-failure__btn{
   display: block;
-  width: 200px;
+  width: 180px;
   padding: 15px 0px;
   margin: 0 auto;
   margin-top: 30px;
@@ -57,6 +60,10 @@
   text-decoration: none;
   background-color: $blue;
   border: 0;
+  @media ($tablet-widths) {
+    width: 270px;
+    margin-bottom: 51px;
+  }
 
   &:hover{
     background-color: #669ec0;

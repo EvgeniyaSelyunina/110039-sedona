@@ -1,12 +1,23 @@
 .photo{
+  padding: 0;
+  margin: 0;
   @media ($tablet-widths) {
     margin: 0px;
     padding: 0px;
     &--base{
       width: 100%;
+      margin: 0 auto;
+      text-align:center;
     }
     &--table{
       width: 50%;
+      margin: 0 auto;
+      text-align:center;
+      height: auto;
+      &:last-child{
+        text-align:left;
+        margin: 0;
+      }
     }
   }
   @media ($desktop-widths) {
@@ -16,24 +27,53 @@
       width: 100%;
       margin: 0px;
       padding: 0px;
+      position: relative;
+      border-top: none;
     }
     &--table{
       width: 33.333333%;
+      position: relative;
+      border-top: none;
+      height: auto;
     }
   }
 }
 
 .photo__picture{
-  padding: 20px 0px;
+  line-height: 0;
+  font-size: 0;
 }
 
 .photo__info{
   text-align:left;
+  padding: 22px 0px;
   @media ($tablet-widths) {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
+    background-color: #f2f2f2;
+    padding-left: 20px;
   }
+  @media ($desktop-widths){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding-left: 0px;
+  }
+}
+
+.photo__left{
+  @media ($desktop-widths){
+  padding-left: 20px;
+  }
+}
+
+.photo__author{
+  text-transform: none;
+  line-height: 24px;
 }
 
 .photo__title{
@@ -45,7 +85,9 @@
 .photo__like{
   position: relative;
   display: block;
-  padding: 5px 20px 0px 35px;
+  padding: 7px 20px 0px 35px;
+  font-weight:bold;
+  line-height: 24px;
   &::before {
     content: "";
     position: absolute;
@@ -58,7 +100,7 @@
     opacity: 0.3;
   }
   @media ($tablet-widths) {
-    padding-right: 30px;
+    padding-right: 33px;
     padding-top: 10px;
     &::before {
       top: 8px;
