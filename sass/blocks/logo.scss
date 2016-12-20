@@ -1,16 +1,18 @@
 .logo{
   position: relative;
-  margin: 0 auto;
-  width: 102px;
+  width: 104px;
   height: 56px;
+  margin: 0 auto;
+  z-index: 9998;
 
   @media ($tablet-widths) {
     position: absolute;
     top: 0px;
-    left: 50%;
     transform: translateX(-50%);
+    left: 50%;
   }
   @media ($desktop-widths) {
+    width: 200px;
     height: 96px;
   }
 }

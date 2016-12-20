@@ -1,3 +1,6 @@
 .presentation{
-  margin: 36px 70px;
+  padding: 20px 42px;
+  @media ($tablet-widths){
+    padding: 45px 220px;
+  }
 }

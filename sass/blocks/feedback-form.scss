@@ -1,16 +1,21 @@
 .feedback-form{
+  width: 100%;
+  margin: 0 auto;
   @media ($tablet-widths) {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
 .feedback-form__group{
   border-top: 1px solid #e5e5e5;
   text-align:left;
-  padding: 20px 20px;
-  margin-bottom: 40px;
+  padding: 20px 0px;
+  margin-bottom: 30px;
+  position: relative;
 
   @media ($tablet-widths) {
     width: 100%;
@@ -23,7 +28,6 @@
       width: 50%;
       flex-direction: column;
       justify-content: space-between;
-      align-items: flex-end;
     }
 
     &:nth-child(3) {
@@ -31,12 +35,10 @@
       width:50%;
       justify-content: space-between;
       flex-direction: column;
-      align-items: flex-start;
     }
     &:nth-child(2) {
       flex-direction: column;
       align-items: center;
-      margin-bottom: 50px;
     }
     &:nth-child(4) {
       flex-direction: column;
@@ -55,20 +57,18 @@
   @include title();
 
   @media ($tablet-widths){
-    text-align: left;
-  }
-  @media ($desktop-widths) {
+    width: 286px;
+    margin: 0 auto;
     text-align: center;
-    &:nth-child(1) {
+    &--left{
       text-align: left;
-    }
-    &:nth-child(3) {
-      text-align: left;
+      margin: 0;
     }
   }
 }
 
 .feedback-form__item{
+  width: 100%;
   padding-top: 20px;
 }
 
@@ -78,32 +78,119 @@
   padding-left: 22px;
   background-color:$lightgray;
   color:black;
-  margin-left: 20px;
+  margin-right: 0px;
     @include title();
+
+    &--long{
+      width: 230px;
+    }
+    &--short{
+      width: 190px;
+    }
+    &--short-two{
+      width: 194px;
+    }
 }
 
 .feedback-form__group--contacts {
   position: relative;
-  @media ($desktop-widths) {
+  display: flex;
+  flex-direction: column;
+  @media ($tablet-widths) {
+    position: relative;
     width: 100%;
+    padding-bottom: 6px;
+  }
+  @media ($desktop-widths) {
+    position: relative;
+    width: 100%;
+    padding-bottom: 53px;
   }
 }
 
-.feedback-form__group--contacts label {
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 20px;
-  margin-bottom: 5px;
+.feedback-form__label {
+  margin-bottom: 9px;
+  margin-left: 23px;
+  @media ($tablet-widths) {
+    margin-bottom: 9px;
+  }
+  @media ($desktop-widths) {
+    &--phone{
+      margin-left: 0;
+      margin-right: 21px;
+    }
+    &--email{
+      width: 148px;
+      margin-right: 22px;
+    }
+  }
 }
 
-.feedback-form__group--contacts input {
+.feedback-form__check {
+  color: #ff7272;
+  font-size: 14px;
+  line-height: 26px;
   text-transform: none;
-  min-height: 60px;
+  margin-bottom: 14px;
+  margin-top: 4px;
+  margin-left: 22px;
+  @media ($tablet-widths) {
+    position: absolute;
+    margin: 0px;
+    right: 0;
+    top: 0;
+  }
+  @media ($desktop-widths) {
+    order: -1;
+    width: 100%;
+    left: 200px;
+    top: -15px;
+  }
+}
+
+.feedback-form__input {
+  width: 280px;
+  padding: 20px 0px;
   padding-left: 20px;
-  width: 250px;
-  box-sizing: border-box;
-  margin-bottom: 45px;
   border: none;
+  &:hover{
+    background: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+  &:focus,
+  &:focus:hover{
+    background: white;
+    border: 4px solid #e5e5e5;
+  }
+  @media ($tablet-widths) {
+    width: 100%;
+    &--phone {
+        margin-bottom: 21px;
+      }
+  }
+  @media ($desktop-widths) {
+    width: 350px;
+    height: 30px;
+  }
+}
+
+.feedback-form__item--contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media ($tablet-widths) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media ($desktop-widths) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .feedback-form__group--contacts input[type="tel"] {
@@ -116,11 +203,15 @@
   background-color: #f2f2f2;
 }
 
+.feedback-form input::-webkit-input-placeholder {
+  color: #000000;
+}
+
 .feedback-form__group--feeling label {
   position: relative;
   text-transform: none;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   margin-left: 80px;
   cursor: pointer;
     @include title();
@@ -222,28 +313,22 @@ input[name="place"]:checked + label:active::after {
   background-color: #d5d5d5;
 }
 
-.feedback-form__check{
-  color: #ff7272;
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: none;
-}
-
-.feedback-form__level{
+.feedback-form__wrapper{
   @media ($tablet-widths) {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 auto;
+    justify-content: center;
   }
 }
 
 .feedback-form__item--order{
   @media ($tablet-widths) {
-    min-width: 260px;
-    margin-top: 60px;
-    padding-left: 70px;
+    margin-top: 35px;
+    width: 40%;
     &:nth-child(1) {
       order: -2;
     }
@@ -257,27 +342,45 @@ input[name="place"]:checked + label:active::after {
   }
 }
 
-.feedback-form__item--size{
-  @media ($tablet-widths) {
-    width: 200px;
-    justify-content: space-between;
-  }
-}
-
 .feedback-form__item--comment textarea {
-  width: 300px;
-  min-height: 160px;
+  width: 100%;
+  height: 160px;
   border: none;
+  padding: 15px 0px;
+  padding-left: 10px;
   background: $lightgray;
   color: black;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  padding: 15px 20px;
   resize: none;
-
+  &:hover {
+    background-color: #e5e5e5;;
+  }
+  &:focus,
+  &:focus:hover{
+    background: white;
+    border: 4px solid #e5e5e5;
+  }
   @media ($tablet-widths) {
     width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.feedback-form__bottom{
+  @media ($tablet-widths) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+.feedback-form__notice{
+  @media ($mobile-widths-only){
+    display: none;
   }
 }
 
@@ -287,7 +390,7 @@ input[name="place"]:checked + label:active::after {
   padding: 15px 0px;
   margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 49px;
+  margin-bottom: 30px;
   font-size: 21px;
   line-height: 26px;
   color: $white;
@@ -302,5 +405,32 @@ input[name="place"]:checked + label:active::after {
   &:active{
     background-color: #5496bd;
       color: #88b6d1;
+  }
+  @media ($tablet-widths) {
+    margin: 0;
+  }
+}
+
+.feedback-form__legend--line::before {
+  @media ($tablet-widths){
+    position: absolute;
+    content: "";
+    width: 125px;
+    height: 2px;
+    background-color: #f2f2f2;
+    left: 0;
+    top: 27px;
+  }
+}
+
+.feedback-form__legend--line::after {
+  @media ($tablet-widths){
+    position: absolute;
+    content: "";
+    width: 125px;
+    height: 2px;
+    background-color: #f2f2f2;
+    right: 0;
+    top: 27px;
   }
 }

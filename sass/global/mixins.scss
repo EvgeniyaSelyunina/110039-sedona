@@ -6,14 +6,10 @@
 
 @mixin container-fluid() {
   background-color: $white;
-  width: auto;
+  width: 100%;
 
-  @media ($tablet-widths) {
-    min-width: 768;
-    max-width: 1199px;
-    margin: 0 auto;
-  }
   @media ($desktop-widths) {
     width: 1200px;
+    margin: 0 auto;
   }
 }

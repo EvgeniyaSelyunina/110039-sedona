@@ -24,6 +24,7 @@
 @import "blocks/video.scss";
 
 @import "blocks/popup-failure";
+@import "blocks/popup-success";
 
 
 body {
@@ -39,18 +40,10 @@ body {
   text-transform: uppercase;
   min-width: 320px;
   text-align: center;
-  @media ($tablet-widths) {
-    min-width: 100%;
-  }
-  @media ($desktop-widths) {
-    min-width: 1200px;
-  }
 }
 
-img {
+img{
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .wrapper {
