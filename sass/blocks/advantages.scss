@@ -1,5 +1,6 @@
 .advantages__header {
   margin-bottom: 30px;
+  padding: 0px 35px;
   @media ($tablet-widths) {
     margin-bottom: 30px;
   }
@@ -8,7 +9,6 @@
 .advantages__title {
   font-size: $title-font-size;
   line-height: 26px;
-  padding: 0px 31px;
   margin-bottom: 40px;
   @media ($tablet-widths) {
    margin: 0px 162px;
@@ -21,7 +21,6 @@
 .advantages__text {
   font-size: $text-font-size;
   line-height: 26px;
-  padding: 0px 31px;
   @media ($tablet-widths) {
     margin-bottom: 45px;
   }

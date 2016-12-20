@@ -5,7 +5,7 @@
   }
   &--icons{
     margin-top: 25px;
-    margin-bottom: 43px;
+    margin-bottom: 40px;
   }
   @media ($tablet-widths) {
     display: flex;
@@ -19,7 +19,7 @@
   &--blue{
     background-color:$blue;
     color: $white;
-    padding: 40px 90px;
+    padding: 40px 28px;
     padding-top: 60px;
     @media ($tablet-widths) {
       padding: 46px 50px;
@@ -28,9 +28,8 @@
       margin: 0px auto;
     }
     @media ($desktop-widths) {
-      min-height: 400px;
-      padding: 0px 50px;
-      vertical-align: middle;
+      max-height: 308px;
+      padding: 118px 0px;
     }
   }
   &--first{
@@ -39,28 +38,61 @@
     }
   }
   &--gray{
-    padding: 30px 30px;
+    padding: 30px 20px;
     @media ($tablet-widths) {
-      padding: 45px 47px;
       width: 33.333333%;
+      padding: 48px 35px;
     }
-    @media ($tablet-widths) {
+    @media ($desktop-widths) {
       padding: 50px 66px;
     }
   }
   &--image{
     width: 100%;
+    line-height: 0px;
     @media ($tablet-widths) {
      width: 66.666666%;
      margin: 0 auto;
    }
   }
   &--icon{
-    padding-left: 20px;
+    position: relative;
     text-align: left;
+    padding: 20px 0px;
+    padding-left: 105px;
+      &:before{
+        position: absolute;
+        content: "";
+        left: 20px;
+        top: 8px;
+      @media ($tablet-widths) {
+        transform: translateX(-50%);
+        left: 50%;
+        top: 65px;
+      }
+      }
     @media ($tablet-widths) {
       text-align: center;
-      padding: 50px 40px;
+      padding: 20px 6%;
+      padding-top: 160px;
+    }
+  }
+  &--icon-house{
+    &:before{
+      content: url("../img/icon-house.svg");
+    }
+  }
+  &--icon-souvenirs{
+    &:before{
+      content: url("../img/icon-gift.svg");
+    }
+    @media ($tablet-widths) {
+      order: 1;
+    }
+  }
+  &--icon-food{
+    &:before{
+      content: url("../img/icon-burger.svg");
     }
   }
 }
@@ -85,6 +117,15 @@
        display: none;
      }
     }
+}
+
+.advantage__title{
+  @media ($tablet-widths) {
+    padding: 0px 27px;
+  }
+  @media ($desktop-widths) {
+    padding: 0px 55px;
+  }
 }
 
 .advantage__item--gray:first-child{
@@ -113,53 +154,15 @@
   }
 }
 
-.advantage__title--icon{
-  line-height: 26px;
-  padding-left: 90px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  font-size: $title-font-size;
-  text-align: left;
-  margin: 8px 0;
-  background-repeat: no-repeat;
-  @media ($tablet-widths) {
-    padding-top: 95px;
-    text-align: center;
-    padding-left: 0px;
-    padding-bottom: 0px;
-  }
+.advantage__picture{
+  margin: 0px;
+  padding: 0px;
 }
 
-.advantage__title{
-  &--house {
-    background-image: url("../img/icon-house.svg");
-	  background-position: left;
-      @media ($tablet-widths) {
-        background-position: top;
-      }
-  }
-  &--souvenirs {
-    background-image: url("../img/icon-gift.svg");
-	  background-position: left;
-      @media ($tablet-widths) {
-        background-position: top;
-      }
-  }
-  &--food {
-    background-image: url("../img/icon-burger.svg");
-	  background-position: left;
-      @media ($tablet-widths) {
-        background-position: top;
-      }
-  }
-}
-
-.advantage__text--icon{
-  font-size: $text-font-size;
-  text-align: left;
-  padding-left: 90px;
-  @media ($tablet-widths) {
-    text-align: center;
-    padding-left: 0px;
+.advantage__text{
+  &--icon {
+    @media ($tablet-widths) {
+      text-align: center;
+    }
   }
 }

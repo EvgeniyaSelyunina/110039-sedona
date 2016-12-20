@@ -1,13 +1,14 @@
 .search-hotel{
-  width: 66.666666%;
-  margin: 0 auto;
-
+  padding: 10px 20px;
 }
 
 .search-hotel__title{
-  padding: 10px 0px;
   line-height: 26px;
-  font-size: 30px;
+  font-size: 26px;
+}
+
+.search-hotel__description{
+  padding: 0px 25px;
 }
 
 .search-hotel__btn{

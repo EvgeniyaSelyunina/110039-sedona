@@ -19,7 +19,11 @@
         </nav>
         <div class="logo">
           <a class="logo__link" href="index.html">
-            <img class="logo__picture" src="img/logo-sedona-mobile.svg" alt="Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logo-sedona-mobile.svg" alt="Sedona" class="logo__picture">
+            </picture>
           </a>
         </div>
       </header>
@@ -47,20 +51,14 @@
               <input class="feedback-form__name feedback-form__name--short-two" type="text" placeholder="Александрович" id="name" required>
             </div>
           </div>
-          <div class="feedback-form__group feedback-form__group--contacts">
-            <div class="feedback-form__legend">Контактная информация:</div>
-            <div class="feedback-form__item">
-              <label for="phone">Контактный телефон*:</label>
-              <div class="feedback-form__long">
-                <input id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
-              </div>
+          <div class="feedback-form__group feedback-form__group--contacts feedback-form__group--topborder">
+            <div class="feedback-form__legend feedback-form__legend--line">Контактная информация:</div>
+            <div class="feedback-form__item feedback-form__item--contact">
+              <label class="feedback-form__label feedback-form__label--phone" for="phone">Контактный телефон*:</label>
+              <input class="feedback-form__input feedback-form__input--phone" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
               <span class="feedback-form__check">Ошибка, перепроверьте номер</span>
-            </div>
-            <div class="feedback-form__item">
-              <label for="email">Электронная почта*:</label>
-              <div class="feedback-form__long">
-                <input id="email" type="email" name="email" placeholder="Введите e-mail" required>
-              </div>
+              <label class="feedback-form__label feedback-form__label--email" for="email">Электронная почта*:</label>
+              <input class="feedback-form__input feedback-form__input--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
             </div>
           </div>
           <div class="feedback-form__group feedback-form__group--feeling">
@@ -79,7 +77,7 @@
             </div>
           </div>
           <div class="feedback-form__group feedback-form__group--place">
-            <div class="feedback-form__legend">Посещенные достопримечательности:</div>
+            <div class="feedback-form__legend feedback-form__legend--line">Посещенные достопримечательности:</div>
             <div class="feedback-form__wrapper">
               <div class="feedback-form__item feedback-form__item--order">
                 <input id="bridge" type="checkbox" name="place" value="bridge" checked>
@@ -100,7 +98,7 @@
             </div>
           </div>
           <div class="feedback-form__group">
-            <div class="feedback-form__legend">Опишите свои эмоции:</div>
+            <div class="feedback-form__legend feedback-form__legend--line">Опишите свои эмоции:</div>
             <div class="feedback-form__item feedback-form__item--comment">
               <textarea class="feedback-form__comment" name="text-letter" required>Опишите подробно все свои восторги</textarea>
             </div>

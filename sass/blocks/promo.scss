@@ -6,7 +6,7 @@
   background-position: center;
   width: 100%;
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 45px;
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx){
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -33,17 +33,22 @@
     width: 100%;
     margin: 0 auto;
     height: 27px;
-    bottom: -1px;
+    bottom: 0;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-size: 360px 27px;
     background-position: bottom;
     background-repeat: no-repeat;
 
     @media ($tablet-widths) {
       background-image: url("../img/bg-intro-triangle-tablet.svg");
+      background-size: 100% 56px;
       height: 58px;
+      bottom: 0;
     }
     @media ($desktop-widths) {
       background-image: url("../img/bg-intro-triangle-desktop.svg");
+      background-size: 1202px 58px;
+      bottom: -1px;
     }
   }
 }
