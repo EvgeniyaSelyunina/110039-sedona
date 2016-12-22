@@ -7,6 +7,33 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-sass");
 
   grunt.initConfig({
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          src: [
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**",
+            "*.html"
+          ],
+          dest: "build"
+        }]
+      },
+
+    html: {
+      files: [{
+         expand: true,
+         src: ["*.html"],
+         dest: "build"
+        }]
+      }
+    },
+
+    clean: {
+      build: ["build"]
+    },
+
     sass: {
       style: {
         files: {
@@ -28,32 +55,57 @@ module.exports = function(grunt) {
       }
     },
 
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 5
+        },
+        files: [{
+          expand: true,
+          src: ["build/img/**/*.{png,jpg,gif}"]
+        }]
+      }
+    },
+
     browserSync: {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
-          server: ".",
+          server: "./build",
           watchTask: true,
           notify: false,
           open: true,
-          cors: true,
           ui: false
         }
       }
     },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"],
+        options: {spawn: false}
+      },
       style: {
         files: ["sass/**/*.{scss,sass}"],
-        tasks: ["sass", "postcss"]
+        tasks: ["sass", "postcss", "csso"],
+        options: {spawn: false}
       }
     }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-};
+  grunt.registerTask("build", [
+    "clean",
+    "copy",
+    "sass",
+    "postcss",
+    "csso",
+    "svgmin",
+    "imagemin"
+  };

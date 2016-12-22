@@ -1,7 +1,11 @@
 .feedback{
-  padding: 0px 30px;
+  padding: 0px 20px;
   @media ($tablet-widths) {
-      margin: 75px 0;
+    padding: 0px 60px;
+    margin: 75px 0;
+  }
+  @media ($desktop-widths){
+    padding: 0px 120px;
   }
 }
 
@@ -12,6 +16,7 @@
   padding-top: 40px;
   padding-bottom: 20px;
   @media ($tablet-widths) {
-      padding: 0px 120px;
+    padding: 0px 105px;
+    margin-bottom: 60px;
   }
 }

@@ -5,11 +5,12 @@
   font-weight: normal;
   @media ($tablet-widths) {
     width: 33.333333%;
+    margin-top: 12px;
   }
 }
 
 .copyright__text{
-  margin-right: 11px;
+  margin-right: 18px;
 }
 
 .copyright svg{

@@ -54,16 +54,22 @@
           <div class="feedback-form__group feedback-form__group--contacts feedback-form__group--topborder">
             <div class="feedback-form__legend feedback-form__legend--line">Контактная информация:</div>
             <div class="feedback-form__item feedback-form__item--contact">
-              <label class="feedback-form__label feedback-form__label--phone" for="phone">Контактный телефон*:</label>
-              <input class="feedback-form__input feedback-form__input--phone" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
-              <span class="feedback-form__check">Ошибка, перепроверьте номер</span>
+              <label class="feedback-form__label feedback-form__label--phone" for="phone"><span class="feedback-form__sight"><span class="feedback-form__hide">Контактный</span> телефон*:</span></label>
+              <div class="feedback-form__field">
+                <input class="feedback-form__input feedback-form__input--phone" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
+                <div class="feedback-form__icon feedback-form__icon--phone"></div>
+              </div>
+              <span class="feedback-form__check feedback-form__check--closed feedback-form__check--nojs">Ошибка, перепроверьте номер</span>
               <label class="feedback-form__label feedback-form__label--email" for="email">Электронная почта*:</label>
-              <input class="feedback-form__input feedback-form__input--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+              <div class="feedback-form__field">
+                <input class="feedback-form__input feedback-form__input--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                <div class="feedback-form__icon feedback-form__icon--email"></div>
+              </div>
             </div>
           </div>
           <div class="feedback-form__group feedback-form__group--feeling">
             <div class="feedback-form__legend feedback-form__legend--left">Ваше общее впечатление:</div>
-            <div class="feedback-form__item">
+            <div class="feedback-form__item feedback-form__item--indent">
               <input id="positive" type="radio" name="emotion" value="positive" checked>
               <label for="positive">Скорее положительное</label>
             </div>

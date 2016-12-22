@@ -1,7 +1,21 @@
+.gallery{
+  @media ($tablet-widths){
+    padding: 40px 7.8%;
+  }
+  @media ($desktop-widths){
+    padding: 40px 0;
+  }
+}
+
 .gallery__header{
   padding: 30px 6%;
   @media ($tablet-widths){
-    width: 50%;
-    margin: 0 auto;
+    padding: 30px 110px 60px 110px;
+  }
+}
+
+.gallery__title{
+  @media ($tablet-widths){
+    padding-bottom: 10px;
   }
 }

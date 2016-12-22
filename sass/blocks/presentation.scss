@@ -1,6 +1,15 @@
 .presentation{
-  padding: 20px 42px;
+  padding: 20px 30px;
   @media ($tablet-widths){
-    padding: 45px 220px;
+    padding: 0px 170px;
+    padding-bottom: 60px;
   }
+  @media ($desktop-widths){
+    padding: 10px 390px;
+    padding-bottom: 50px;
+  }
+}
+
+.presentation__title{
+  padding-bottom: 20px;
 }

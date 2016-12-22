@@ -1,10 +1,21 @@
 .photo{
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0px 6%;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 27px;
+  &:last-child{
+    border-bottom: 1px solid #e5e5e5;
+  }
   @media ($tablet-widths) {
     margin: 0px;
     padding: 0px;
+    border: none;
+    &:last-child{
+      border: none;
+    }
     &--base{
       width: 100%;
       margin: 0 auto;
@@ -24,6 +35,7 @@
   @media ($desktop-widths) {
     margin: 0px;
     padding: 0px;
+    border-top: none;
     &--base{
       width: 100%;
       margin: 0px;
@@ -87,28 +99,27 @@
   padding-bottom: 5px;
 }
 
-.photo__like{
-  position: relative;
-  display: block;
-  padding: 7px 20px 0px 35px;
-  font-weight:bold;
+.photo__like {
+  display: flex;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
   line-height: 24px;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 0px;
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/icon-like.svg");
-    background-repeat: no-repeat;
-    opacity: 0.3;
-  }
+  padding: 5px 0px;
   @media ($tablet-widths) {
-    padding-right: 33px;
+    padding-right: 20px;
     padding-top: 10px;
-    &::before {
-      top: 8px;
-    }
+  }
+  @media ($desktop-widths) {
+    color: white;
+    padding-top: 20px;
+  }
+}
+
+.photo__like-img {
+  fill: #b2b2b2;
+  margin-right: 10px;
+  @media ($desktop-widths) {
+    fill: #ffffff;
   }
 }
