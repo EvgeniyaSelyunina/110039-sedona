@@ -1,22 +1,32 @@
 .feedback{
-  padding: 0px 20px;
   @media ($tablet-widths) {
     padding: 0px 60px;
     margin: 75px 0;
+    margin-bottom: 58px;
   }
   @media ($desktop-widths){
     padding: 0px 120px;
+    margin: 110px 0;
+    margin-bottom: 50px;
   }
 }
 
 .feedback__title{
   @include title();
+  padding-bottom: 17px;
+  @media ($tablet-widths) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 .feedback__lead{
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   @media ($tablet-widths) {
     padding: 0px 105px;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
+  }
+  @media ($desktop-widths){
+    padding: 0px 260px;
+    margin-bottom: 55px;
   }
 }

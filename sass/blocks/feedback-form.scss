@@ -13,8 +13,8 @@
 .feedback-form__group{
   border-top: 1px solid #e5e5e5;
   text-align:left;
-  padding: 20px 0px;
-  margin-bottom: 10px;
+  padding: 8px 20px;
+  margin-bottom: 20px;
   position: relative;
 
   @media ($tablet-widths) {
@@ -28,7 +28,7 @@
       flex-direction: column;
       justify-content: space-between;
       box-sizing: border-box;
-      padding-left: 40px;
+      padding-left: 57px;
     }
 
     &:nth-child(3) {
@@ -50,38 +50,76 @@
     &:nth-child(2) {
       flex-direction: column;
       align-items: center;
+      margin-bottom: 25px;
     }
     &:nth-child(5) {
       align-items: center;
     }
   }
   @media ($desktop-widths){
+    position: relative;
+    width: 100%;
     &:nth-child(1) {
       padding-left: 60px;
+    }
+    &:nth-child(1) {
+      padding-left: 79px;
     }
   }
 }
 
 .feedback-form__legend{
   text-align:center;
-  padding: 10px 0px;
+  padding: 7px 0px;
   @include title();
-
+  &--place{
+    padding-bottom: 30px;
+  }
   @media ($tablet-widths){
     width: 286px;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 30px;
+    font-size: 21px;
+    line-height: 26px;
     &--left{
       text-align: left;
       margin: 0;
       margin-bottom: 10px;
     }
+    &--line{
+      padding: 4px 0px;
+    }
+    &--place{
+      padding-bottom: 20px;
+    }
+    &--bottom{
+      margin-bottom: 0px;
+    }
+  }
+  @media ($desktop-widths){
+    &--left{
+      padding-left: 80px;
+    }
+    &--bottom{
+      padding-left: 0px;
+    }
   }
 }
 
 .feedback-form__item{
-  padding-top: 15px;
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  display: block;
+    @media ($tablet-widths){
+      &--rise{
+      padding-top: 0px;
+      }
+      &--name{
+      padding-top: 0px;
+      }
+    }
 }
 
 .feedback-form__item--line{
@@ -89,7 +127,11 @@
 }
 
 .feedback-form__item--indent{
-  margin-top: 25px;
+  margin-top: 14px;
+}
+
+.feedback-form__item--order{
+  padding-top: 0px;
 }
 
 .feedback-form__name{
@@ -103,7 +145,7 @@
     @include title();
 
     &--long{
-      width: 205px;
+      width: 206px;
     }
     &--short{
       width: 169px;
@@ -113,24 +155,24 @@
     }
     @media ($tablet-widths) {
       &--long{
-        width: 210px;
+        width: 193px;
       }
       &--short{
-        width: 173px;
+        width: 156px;
       }
       &--short-two{
-        width: 178px;
+        width: 161px;
       }
     }
     @media ($desktop-widths) {
       &--long{
-        width: 346px;
+        width: 327px;
       }
       &--short{
-        width: 309px;
+        width: 290px;
       }
       &--short-two{
-        width: 313px;
+        width: 295px;
       }
     }
 }
@@ -142,31 +184,33 @@
   @media ($tablet-widths) {
     position: relative;
     width: 100%;
-    padding-bottom: 6px;
-    margin: 40px 0px;
+    margin: 26px 0px;
+    margin-bottom: 48px;
   }
   @media ($desktop-widths) {
     position: relative;
     width: 100%;
     padding-right: 0px;
     margin-right: 0px;
+    margin-top: 20px;
   }
 }
 
 .feedback-form__label {
   margin-bottom: 9px;
   margin-left: 23px;
+  display: block;
   @media ($tablet-widths) {
     margin-bottom: 9px;
   }
   @media ($desktop-widths) {
+    margin-left: 0px;
     &--phone{
       margin-left: 0;
-      margin-right: 21px;
+      margin-right: 24px;
     }
     &--email{
       width: 148px;
-      margin-left: 70px;
       margin-right: 21px;
     }
   }
@@ -184,69 +228,42 @@
     position: absolute;
     margin: 0px;
     right: 0;
-    top: 0;
+    bottom: 187px;
   }
   @media ($desktop-widths) {
     order: -1;
     left: 115px;
-    top: -15px;
+    bottom: 80px;
   }
-}
-
-.feedback-form__check--closed .feedback-form__check {
-    display: none;
 }
 
 .feedback-form__check--nojs .feedback-form__check{
    display: block;
 }
 
-.feedback-form__input {
-  width: 280px;
-  padding: 20px 0px;
-  padding-left: 20px;
-  border: 4px solid #f2f2f2;
-  background-color: #f2f2f2;
-
-  &:hover{
-    background: #e5e5e5;
-    border: 4px solid #e5e5e5;
-  }
-  &:focus,
-  &:focus:hover{
-    background: white;
-    border: 4px solid #e5e5e5;
-  }
-  @media ($tablet-widths) {
-    width: 621px;
-    &--phone {
-        margin-bottom: 21px;
-      }
-  }
+.feedback-form__item--contact {
+  position: relative;
   @media ($desktop-widths) {
-    width: 265px;
-    &--phone {
-        margin-right: 35px;
-      }
+    display: flex;
+    align-items: baseline;
+    margin-top: 40px;
   }
 }
 
-.feedback-form__item--contact {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.feedback-form__level{
+  &:first-child{
+    margin-bottom: 23px;
+  }
   @media ($tablet-widths) {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    &:first-child{
+      margin-bottom: 16px;
+    }
   }
   @media ($desktop-widths) {
+    width: 50%;
+    margin-top: 20px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    margin-top: 25px;
+    align-items: center;
   }
 }
 
@@ -258,14 +275,24 @@
 
 .feedback-form__field{
   position: relative;
+  margin-top: 10px;
+  width: 280px;
+  @media ($tablet-widths) {
+   width: 648px;
+ }
+ @media ($desktop-widths) {
+   width: 315px;
+   margin-top: 0px;
+ }
 }
 
 .feedback-form__icon {
   position: absolute;
   width: 60px;
-  height: 63px;
+  height: 54px;
+  display: inline;
   background: #e6e6e6;
-  right: 0;
+  right: 0px;
   top: 0;
 
   &:after{
@@ -276,7 +303,10 @@
     top: 50%;
   }
   @media ($tablet-widths) {
-    height: 64px;
+    height: 54px;
+  }
+  @media ($desktop-widths) {
+    right: 0px;
   }
 }
 
@@ -294,15 +324,58 @@
   color: #000000;
 }
 
+.feedback-form__check--closed .feedback-form__check {
+    display: none;
+}
+
+.feedback-form__check--nojs .feedback-form__check{
+   display: block;
+}
+
+.feedback-form__input {
+  width: 250px;
+  padding: 15px 0px;
+  padding-left: 20px;
+  border: 4px solid #f2f2f2;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  &:hover{
+    background: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+  &:focus,
+  &:focus:hover{
+    background: white;
+    border: 4px solid #e5e5e5;
+  }
+  @media ($tablet-widths) {
+    width: 621px;
+    &--phone {
+        margin-bottom: 21px;
+      }
+  }
+  @media ($desktop-widths) {
+    width: 281px;
+    padding: 15px 12px;
+    &--phone {
+        margin-bottom: 0px;
+      }
+  }
+}
+
+.feedback-form input::-webkit-input-placeholder {
+  color: #000000;
+}
+
 .feedback-form__group--feeling{
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .feedback-form__group--feeling label {
   position: relative;
   text-transform: none;
   display: block;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   margin-left: 80px;
   cursor: pointer;
     @include title();
@@ -320,9 +393,9 @@
   position: absolute;
   content: '';
   width: 55px;
-  height: 55px;
+  height: 60px;
   left: -80px;
-  top: -15px;
+  top: -12px;
   border-radius: 50%;
   background-color: #f2f2f2;
 }
@@ -334,7 +407,7 @@ input[name="emotion"]:checked + label::after {
   width: 22px;
   height: 22px;
   left: -63px;
-  top: 2px;
+  top: 4px;
   border-radius: 50%;
   background-color: #000000;
 }
@@ -353,6 +426,14 @@ input[name="emotion"]:checked + label:active::after {
 
 .feedback-form__group--place{
   margin-bottom: 0px;
+  padding-bottom: 0px;
+  @media ($tablet-widths){
+    margin-top: 20px;
+  }
+  @media ($desktop-widths) {
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
 }
 
 .feedback-form__group--place input {
@@ -364,8 +445,11 @@ input[name="emotion"]:checked + label:active::after {
   display: block;
   text-transform: none;
   margin-left: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
     @include title();
+    @media ($tablet-widths){
+      margin-left: 90px;
+    }
 }
 
 .feedback-form__group--place label::before {
@@ -420,17 +504,18 @@ input[name="place"]:checked + label:active::after {
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    padding-left: 55px;
-    margin-bottom: 30px;
+    padding-left: 30px;
+    margin-bottom: 0px;
   }
   @media ($desktop-widths) {
     width: 100%;
+    padding-left: 0px;
   }
 }
 
 .feedback-form__item--order{
   @media ($tablet-widths) {
-    margin-top: 35px;
+    margin-top: 38px;
     width: 40%;
     &:nth-child(1) {
       order: -2;
@@ -449,10 +534,10 @@ input[name="place"]:checked + label:active::after {
   width: 280px;
   height: 160px;
   border: none;
-  padding: 15px 10px;
+  padding: 15px 12px;
   background: $lightgray;
   color: black;
-  font-size: 18px;
+  font-size: 18spx;
   line-height: 26px;
   font-weight: bold;
   resize: none;
@@ -469,7 +554,8 @@ input[name="place"]:checked + label:active::after {
   @media ($tablet-widths) {
     width: 648px;
     height: 160px;
-    margin-bottom: 35px;
+    padding: 17px 18px;
+    margin: 30px auto;
   }
   @media ($desktop-widths) {
     width: 960px;
@@ -490,6 +576,9 @@ input[name="place"]:checked + label:active::after {
   @media ($mobile-widths-only){
     display: none;
   }
+  @media ($tablet-widths) {
+    padding-top: 12px;
+  }
 }
 
 .feedback-form__btn{
@@ -497,7 +586,7 @@ input[name="place"]:checked + label:active::after {
   width: 280px;
   padding: 15px 0px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 36px;
   margin-bottom: 30px;
   font-size: 21px;
   line-height: 26px;
@@ -516,6 +605,11 @@ input[name="place"]:checked + label:active::after {
   }
   @media ($tablet-widths) {
     margin: 0;
+    margin-top: 10px;
+    width: 322px;
+  }
+  @media ($desktop-widths) {
+    width: 480px;
   }
 }
 
@@ -527,10 +621,11 @@ input[name="place"]:checked + label:active::after {
     height: 1px;
     background-color: #dbdbdb;
     left: 0;
-    top: 27px;
+    top: 22px;
   }
   @media ($desktop-widths){
     width: 300px;
+    top: 18px;
   }
 }
 
@@ -542,9 +637,10 @@ input[name="place"]:checked + label:active::after {
     height: 1px;
     background-color: #dbdbdb;
     right: 0;
-    top: 27px;
+    top: 22px;
   }
   @media ($desktop-widths){
     width: 300px;
+    top: 18px;
   }
 }

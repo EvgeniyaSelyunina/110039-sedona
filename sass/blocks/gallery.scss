@@ -1,21 +1,38 @@
 .gallery{
   @media ($tablet-widths){
-    padding: 40px 7.8%;
+    padding: 0px 7.8%;
   }
   @media ($desktop-widths){
-    padding: 40px 0;
+    padding: 35px 0;
   }
 }
 
 .gallery__header{
-  padding: 30px 6%;
+  padding: 0px 6%;
+  margin-bottom: 32px;
   @media ($tablet-widths){
-    padding: 30px 110px 60px 110px;
+    padding: 8px 110px 60px 110px;
+    margin-bottom: 0px;
   }
 }
 
 .gallery__title{
+  font-size: 21px;
+  line-height: 26px;
+  padding-bottom: 17px;
   @media ($tablet-widths){
-    padding-bottom: 10px;
+    padding-bottom: 11px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.gallery__description{
+  padding: 0px 5px;
+  @media ($tablet-widths){
+    padding: 0px 0px;
+  }
+  @media ($desktop-widths){
+    padding: 0px 270px;
   }
 }

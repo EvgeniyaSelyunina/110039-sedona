@@ -79,14 +79,20 @@
 }
 
 .video__check{
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  left: 33%;
+  left: 20%;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
   background-color: white;
+  @media ($tablet-widths) {
+    left: 32%;
+  }
+  @media ($desktop-widths) {
+    left: 26%;
+  }
 }
 
 .video__switches{
@@ -113,7 +119,7 @@
   fill: #5c6870;
   border: none;
   outline: none;
-  margin-right: 100px;
+  margin-right: 107px;
   &:hover{
   fill: #333333;
   }
@@ -122,10 +128,10 @@
   }
   @media ($tablet-widths) {
     fill: white;
-    margin-right: 420px;
+    margin-right: 440px;
   }
   @media ($desktop-widths) {
-    margin-right: 570px;
+    margin-right: 590px;
   }
 }
 
@@ -133,6 +139,7 @@
   fill: #5c6870;
   border: none;
   outline: none;
+  padding-right: 0px;
   &:hover{
   fill: #333333;
   }
@@ -148,6 +155,7 @@
   fill: #5c6870;
   border: none;
   outline: none;
+  padding-right: 6px;
   &:hover{
   fill: #333333;
   }

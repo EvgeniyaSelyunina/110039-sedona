@@ -10,11 +10,20 @@
       padding: 60px 0;
       padding-bottom: 45px;
     }
+    @media ($desktop-widths) {
+      padding-bottom: 66px;
+    }
   }
   @media ($tablet-widths) {
     display: flex;
     justify-content: space-between;
     width: auto;
+  }
+  &--blue{
+    @media ($tablet-widths){
+    height: 256px;
+    overflow: hidden;
+    }
   }
 }
 
@@ -31,7 +40,7 @@
       width: 33.333333%;
     }
     @media ($desktop-widths) {
-      padding: 50px 60px;
+      padding: 30px 60px;
     }
   }
   &--order{
@@ -40,15 +49,19 @@
       order: 2;
       padding: 25px 40px;
     }
+    @media ($desktop-widths) {
+      padding: 30px 55px;
+    }
   }
   &--gray{
     padding: 12px 0px;
     @media ($tablet-widths) {
       width: 33.333333%;
-      padding: 25px 6.2%;
+      padding: 25px 5.9%;
     }
     @media ($desktop-widths) {
-      padding: 50px 66px;
+      padding: 25px 70px;
+      margin-bottom: 23px;
     }
   }
   &--image{
@@ -65,6 +78,7 @@
     padding: 5px 0px;
     padding-left: 50px;
     @media ($tablet-widths) {
+     width: 33.333333%;
      padding-left: 0px;
      padding-top: 100px;
      text-align: center;
@@ -77,6 +91,7 @@
     background-size: 35px 35px;
     background-position-y: top;
     @media ($tablet-widths) {
+      width: 33.333333%;
       background-position: top;
       background-size: 75px 75px;
     }
@@ -88,10 +103,10 @@
     background-size: 33px 35px;
     background-position-y: top;
     @media ($tablet-widths) {
+      width: 33.333333%;
       order: 1;
       background-position: top;
       background-size: 65px 75px;
-      background-position-X: 80px;
     }
   }
   &--icon-food{
@@ -102,8 +117,7 @@
     background-position-y: top;
     @media ($tablet-widths) {
       background-position: top;
-      background-size: 75px 69px;
-      background-position-X: 82px;
+      background-size: 76px 69px;
     }
   }
 }
@@ -112,6 +126,7 @@
   width: 100%;
   height: auto;
   overflow: hidden;
+  background-color: $blue;
   @media ($desktop-widths) {
     height: 300px;
   }
@@ -148,7 +163,7 @@
     padding: 0px;
   }
   @media ($desktop-widths) {
-    padding: 0px 55px;
+    padding: 0px 65px;
   }
   &--icon{
     margin-top: 0px;
@@ -191,9 +206,13 @@
   &--icon {
     @media ($tablet-widths) {
       text-align: center;
-      padding: 0px 38px;
+      padding: 0px 45px;
+    }
+    @media ($desktop-widths) {
+      padding: 0px 55px;
     }
   }
+
   &--gray {
     padding: 0px 35px;
     @media ($tablet-widths) {
@@ -202,6 +221,11 @@
     }
     @media ($desktop-widths) {
       padding: 0px;
+    }
+  }
+  &--order{
+    @media ($desktop-widths) {
+      padding: 0px 30px;
     }
   }
 }

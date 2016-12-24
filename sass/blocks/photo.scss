@@ -5,7 +5,7 @@
   margin: 0 auto;
   padding: 0px 6%;
   border-top: 1px solid #e5e5e5;
-  padding-top: 27px;
+  padding-top: 22px;
   &:last-child{
     border-bottom: 1px solid #e5e5e5;
   }
@@ -55,6 +55,7 @@
 .photo__picture {
   width: 280px;
   display: block;
+  background-color: $blue;
   @media ($tablet-widths) {
     width: 100%;
     height: auto;
@@ -63,7 +64,7 @@
 
 .photo__info{
   text-align:left;
-  padding: 22px 0px;
+  padding: 13px 0px;
   @media ($tablet-widths) {
     display: flex;
     flex-wrap:wrap;
@@ -96,7 +97,10 @@
 .photo__title{
   line-height: 24px;
   font-weight:bold;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
+  @media ($tablet-widths) {
+    padding-bottom: 4px;
+  }
 }
 
 .photo__like {
@@ -107,8 +111,8 @@
   line-height: 24px;
   padding: 5px 0px;
   @media ($tablet-widths) {
-    padding-right: 20px;
-    padding-top: 10px;
+    padding-right: 23px;
+    padding-top: 15px;
   }
   @media ($desktop-widths) {
     color: white;
@@ -119,7 +123,28 @@
 .photo__like-img {
   fill: #b2b2b2;
   margin-right: 10px;
+  @media ($tablet-widths) {
+    margin-right: 15px;
+    &:nth-child(even){
+      margin-right: 30px;
+    }
+  }
   @media ($desktop-widths) {
     fill: #ffffff;
+  }
+}
+
+.photo__like-img--line{
+  @media ($tablet-widths) {
+    margin-right: 4px;
+  }
+}
+
+.photo__like-number{
+  @media ($tablet-widths) {
+    padding-right: 10px;
+    &--line{
+      padding-right: 0px;
+    }
   }
 }

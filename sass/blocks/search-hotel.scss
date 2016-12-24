@@ -2,6 +2,9 @@
   @media ($tablet-widths) {
     padding: 30px 130px;
   }
+  @media ($desktop-widths) {
+    padding: 28px 180px;
+  }
 }
 
 .search-hotel__title{
@@ -49,6 +52,7 @@
     margin-bottom: 32px;
   }
   @media ($desktop-widths) {
-    margin-top: 45px;
+    margin-top: 54px;
+    margin-bottom: 40px;
   }
 }
