@@ -29,7 +29,8 @@
   padding: 0 60px;
   font-size: 30px;
   line-height: 40px;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   @media ($tablet-widths) {
     padding: 0 80px;
     margin-bottom: 25px;
@@ -46,7 +47,7 @@
   }
 }
 
-.popup-failure__btn{
+.popup-failure__btn {
   display: block;
   width: 180px;
   padding: 15px 0px;
@@ -65,10 +66,10 @@
     margin-bottom: 51px;
   }
 
-  &:hover{
+  &:hover {
     background-color: #669ec0;
   }
-  &:active{
+  &:active {
     background-color: #5496bd;
       color: #88b6d1;
   }

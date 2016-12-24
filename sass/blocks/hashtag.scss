@@ -1,8 +1,10 @@
 .hashtag {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   color: black;
+  text-decoration: none;
 
   @media ($tablet-widths) {
     width: 33.333333%;

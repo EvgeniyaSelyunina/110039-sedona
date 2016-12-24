@@ -1,9 +1,9 @@
-.menu{
+.menu {
   position: relative;
   width: auto;
 }
 
-.menu--closed .menu__toggle{
+.menu--closed .menu__toggle {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -48,14 +48,14 @@
    }
 }
 
-.menu--nojs .menu__toggle{
+.menu--nojs .menu__toggle {
    @media ($mobile-widths-only){
       display: none;
     }
 }
 
-.menu--nojs .menu__item{
-   @media ($mobile-widths-only){
+.menu--nojs .menu__item {
+   @media ($mobile-widths-only) {
       display: block;
     }
 }
@@ -79,21 +79,21 @@
   line-height: 40px;
   margin: 0;
   padding: 0;
-  padding: 7px 0;
+  padding: 4px 0;
   background-color:$blue;
   border-bottom: 1px solid $gray;
   border-top: 1px solid #9ac2db;
     &:first-child{
       border-top: 0px;
     }
-    &:last-child{
+    &:last-child {
       border-bottom: 0px;
     }
-    &:hover{
+    &:hover {
       background-color: #669ec0;
       color: $white;
     }
-    &:active{
+    &:active {
       background-color: #5496bd;
       color: $white;
     }
@@ -110,6 +110,7 @@
         border:none;
         color: black;
         width: 20%;
+        font-size: $text-font-size;
         &:nth-child(2) {
           margin-right: 20%;
         }
@@ -137,15 +138,15 @@
   color: $white;
   font-size: $title-font-size;
   text-decoration: none;
-  font-size: $title-font-size;
   line-height: 40px;
-  font-weight: bold;
-  padding: 0px 100px;
-  &:hover{
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  padding: 0px 90px;
+  &:hover {
     color: $white;
     background-color: #669ec0;
   }
-  &:active{
+  &:active {
     background-color: #5496bd;
     color: #88b6d1;
   }
@@ -162,18 +163,19 @@
       color: black;
       background-color: white;
       line-height: 26px;
+      font-size: $text-font-size;
       padding: 0px;
       border: none;
-      &:hover{
+      &:hover {
       color: #81b3d2;
       background-color: $white;
       }
-      &:active{
+      &:active {
       color: #b2b2b2;
       }
       &--active {
         color: #766357;
-        &:hover{
+        &:hover {
         color: #604e43;
         }
         &:active {

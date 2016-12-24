@@ -1,17 +1,21 @@
 .page-footer {
   width: 100%;
   text-align: center;
-  padding: 35px 0px 20px 0px;
+  padding: 43px 0px;
 
   @media ($tablet-widths) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0px 0px;
+  }
+  @media ($desktop-widths) {
+    padding: 15px 0px;
   }
 }
 
-.hashtag{
+.hashtag {
   font-size: 21px;
   line-height: 26px;
 }

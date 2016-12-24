@@ -1,21 +1,32 @@
-.photo{
+.photo {
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0px 6%;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 22px;
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
   @media ($tablet-widths) {
     margin: 0px;
     padding: 0px;
-    &--base{
+    border: none;
+    &:last-child{
+      border: none;
+    }
+    &--base {
       width: 100%;
       margin: 0 auto;
       text-align:center;
     }
-    &--table{
+    &--table {
       width: 50%;
       margin: 0 auto;
       text-align:center;
       height: auto;
-      &:last-child{
+      &:last-child {
         text-align:left;
         margin: 0;
       }
@@ -24,14 +35,15 @@
   @media ($desktop-widths) {
     margin: 0px;
     padding: 0px;
-    &--base{
+    border-top: none;
+    &--base {
       width: 100%;
       margin: 0px;
       padding: 0px;
       position: relative;
       border-top: none;
     }
-    &--table{
+    &--table {
       width: 33.333333%;
       position: relative;
       border-top: none;
@@ -43,15 +55,16 @@
 .photo__picture {
   width: 280px;
   display: block;
+  background-color: $blue;
   @media ($tablet-widths) {
     width: 100%;
     height: auto;
   }
 }
 
-.photo__info{
+.photo__info {
   text-align:left;
-  padding: 22px 0px;
+  padding: 13px 0px;
   @media ($tablet-widths) {
     display: flex;
     flex-wrap:wrap;
@@ -59,7 +72,7 @@
     background-color: #f2f2f2;
     padding-left: 20px;
   }
-  @media ($desktop-widths){
+  @media ($desktop-widths) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -70,45 +83,70 @@
   }
 }
 
-.photo__left{
-  @media ($desktop-widths){
+.photo__left {
+  @media ($desktop-widths) {
   padding-left: 20px;
   }
 }
 
-.photo__author{
+.photo__author {
   text-transform: none;
   line-height: 24px;
 }
 
-.photo__title{
+.photo__title {
   line-height: 24px;
-  font-weight:bold;
-  padding-bottom: 5px;
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  padding-bottom: 3px;
+  @media ($tablet-widths) {
+    padding-bottom: 4px;
+  }
 }
 
-.photo__like{
-  position: relative;
-  display: block;
-  padding: 7px 20px 0px 35px;
-  font-weight:bold;
+.photo__like {
+  display: flex;
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   line-height: 24px;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 0px;
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/icon-like.svg");
-    background-repeat: no-repeat;
-    opacity: 0.3;
-  }
+  padding: 5px 0px;
   @media ($tablet-widths) {
-    padding-right: 33px;
-    padding-top: 10px;
-    &::before {
-      top: 8px;
+    padding-right: 23px;
+    padding-top: 15px;
+  }
+  @media ($desktop-widths) {
+    color: white;
+    padding-top: 20px;
+  }
+}
+
+.photo__like-img {
+  fill: #b2b2b2;
+  margin-right: 10px;
+  @media ($tablet-widths) {
+    margin-right: 15px;
+    &:nth-child(even){
+      margin-right: 30px;
+    }
+  }
+  @media ($desktop-widths) {
+    fill: #ffffff;
+  }
+}
+
+.photo__like-img--line {
+  @media ($tablet-widths) {
+    margin-right: 4px;
+  }
+}
+
+.photo__like-number {
+  @media ($tablet-widths) {
+    padding-right: 10px;
+    &--line{
+      padding-right: 0px;
     }
   }
 }
