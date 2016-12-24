@@ -138,41 +138,52 @@
   border: 0px;
   padding: 15px 0px;
   padding-left: 22px;
-  background-color:$lightgray;
+  background-color: #f2f2f2;
   color:black;
   margin-right: 0px;
   margin-left: 11px;
+  border: 4px solid #f2f2f2;
+  box-sizing: border-box;
+  &:hover{
+    background: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+  &:focus,
+  &:focus:hover{
+    background: white;
+    border: 4px solid #e5e5e5;
+  }
     @include title();
 
     &--long{
-      width: 206px;
+      width: 228px;
     }
     &--short{
-      width: 169px;
+      width: 191px;
     }
     &--short-two{
-      width: 174px;
+      width: 195px;
     }
     @media ($tablet-widths) {
       &--long{
-        width: 193px;
+        width: 215px;
       }
       &--short{
-        width: 156px;
+        width: 178px;
       }
       &--short-two{
-        width: 161px;
+        width: 182px;
       }
     }
     @media ($desktop-widths) {
       &--long{
-        width: 327px;
+        width: 349px;
       }
       &--short{
-        width: 290px;
+        width: 312px;
       }
       &--short-two{
-        width: 295px;
+        width: 317px;
       }
     }
 }
@@ -333,7 +344,7 @@
 }
 
 .feedback-form__input {
-  width: 250px;
+  width: 279px;
   padding: 15px 0px;
   padding-left: 20px;
   border: 4px solid #f2f2f2;
@@ -349,13 +360,13 @@
     border: 4px solid #e5e5e5;
   }
   @media ($tablet-widths) {
-    width: 621px;
+    width: 647px;
     &--phone {
         margin-bottom: 21px;
       }
   }
   @media ($desktop-widths) {
-    width: 281px;
+    width: 312px;
     padding: 15px 12px;
     &--phone {
         margin-bottom: 0px;
