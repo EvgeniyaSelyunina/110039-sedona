@@ -1,4 +1,4 @@
-.photo{
+.photo {
   padding: 0;
   margin: 0;
   width: 280px;
@@ -6,7 +6,7 @@
   padding: 0px 6%;
   border-top: 1px solid #e5e5e5;
   padding-top: 22px;
-  &:last-child{
+  &:last-child {
     border-bottom: 1px solid #e5e5e5;
   }
   @media ($tablet-widths) {
@@ -16,17 +16,17 @@
     &:last-child{
       border: none;
     }
-    &--base{
+    &--base {
       width: 100%;
       margin: 0 auto;
       text-align:center;
     }
-    &--table{
+    &--table {
       width: 50%;
       margin: 0 auto;
       text-align:center;
       height: auto;
-      &:last-child{
+      &:last-child {
         text-align:left;
         margin: 0;
       }
@@ -36,14 +36,14 @@
     margin: 0px;
     padding: 0px;
     border-top: none;
-    &--base{
+    &--base {
       width: 100%;
       margin: 0px;
       padding: 0px;
       position: relative;
       border-top: none;
     }
-    &--table{
+    &--table {
       width: 33.333333%;
       position: relative;
       border-top: none;
@@ -62,7 +62,7 @@
   }
 }
 
-.photo__info{
+.photo__info {
   text-align:left;
   padding: 13px 0px;
   @media ($tablet-widths) {
@@ -72,7 +72,7 @@
     background-color: #f2f2f2;
     padding-left: 20px;
   }
-  @media ($desktop-widths){
+  @media ($desktop-widths) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -83,20 +83,21 @@
   }
 }
 
-.photo__left{
-  @media ($desktop-widths){
+.photo__left {
+  @media ($desktop-widths) {
   padding-left: 20px;
   }
 }
 
-.photo__author{
+.photo__author {
   text-transform: none;
   line-height: 24px;
 }
 
-.photo__title{
+.photo__title {
   line-height: 24px;
-  font-weight:bold;
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   padding-bottom: 3px;
   @media ($tablet-widths) {
     padding-bottom: 4px;
@@ -107,7 +108,8 @@
   display: flex;
   color: black;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   line-height: 24px;
   padding: 5px 0px;
   @media ($tablet-widths) {
@@ -134,13 +136,13 @@
   }
 }
 
-.photo__like-img--line{
+.photo__like-img--line {
   @media ($tablet-widths) {
     margin-right: 4px;
   }
 }
 
-.photo__like-number{
+.photo__like-number {
   @media ($tablet-widths) {
     padding-right: 10px;
     &--line{

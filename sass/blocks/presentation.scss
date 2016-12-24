@@ -1,32 +1,32 @@
-.presentation{
+.presentation {
   padding: 20px 30px;
   margin-bottom: 8px;
-  @media ($tablet-widths){
+  @media ($tablet-widths) {
     padding: 45px 170px;
     padding-bottom: 60px;
     margin-bottom: 2px;
   }
-  @media ($desktop-widths){
+  @media ($desktop-widths) {
     padding: 10px 390px;
     padding-bottom: 60px;
   }
 }
 
-.presentation__title{
+.presentation__title {
   padding-bottom: 16px;
   @include title()
-  @media ($tablet-widths){
+  @media ($tablet-widths) {
     font-size: 30px;
     line-height: 26px;
     padding-bottom: 9px;
   }
 }
 
-.presentation__text{
-  @media ($tablet-widths){
+.presentation__text {
+  @media ($tablet-widths) {
     padding: 0px 5px;
   }
-  @media ($desktop-widths){
+  @media ($desktop-widths) {
     padding: 0px 0px;
   }
 }

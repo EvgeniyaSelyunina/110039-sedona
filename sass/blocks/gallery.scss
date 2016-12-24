@@ -1,38 +1,38 @@
-.gallery{
-  @media ($tablet-widths){
+.gallery {
+  @media ($tablet-widths) {
     padding: 0px 7.8%;
   }
-  @media ($desktop-widths){
+  @media ($desktop-widths) {
     padding: 35px 0;
   }
 }
 
-.gallery__header{
+.gallery__header {
   padding: 0px 6%;
   margin-bottom: 32px;
-  @media ($tablet-widths){
+  @media ($tablet-widths) {
     padding: 8px 110px 60px 110px;
     margin-bottom: 0px;
   }
 }
 
-.gallery__title{
+.gallery__title {
   font-size: 21px;
   line-height: 26px;
   padding-bottom: 17px;
-  @media ($tablet-widths){
+  @media ($tablet-widths) {
     padding-bottom: 11px;
     font-size: 30px;
     line-height: 26px;
   }
 }
 
-.gallery__description{
+.gallery__description {
   padding: 0px 5px;
-  @media ($tablet-widths){
+  @media ($tablet-widths) {
     padding: 0px 0px;
   }
-  @media ($desktop-widths){
+  @media ($desktop-widths) {
     padding: 0px 270px;
   }
 }

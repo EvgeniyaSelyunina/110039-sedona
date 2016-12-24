@@ -1,4 +1,4 @@
-.feedback-form{
+.feedback-form {
   width: 100%;
   margin: 0 auto;
   @media ($tablet-widths) {
@@ -10,7 +10,7 @@
   }
 }
 
-.feedback-form__group{
+.feedback-form__group {
   border-top: 1px solid #e5e5e5;
   text-align:left;
   padding: 8px 20px;
@@ -37,7 +37,7 @@
       justify-content: space-between;
       flex-direction: column;
       position: relative;
-      &::after{
+      &::after {
         position: absolute;
         content: "";
         width: 1px;
@@ -49,14 +49,14 @@
     }
     &:nth-child(2) {
       flex-direction: column;
-      align-items: center;
+      align-items: baseline;
       margin-bottom: 25px;
     }
     &:nth-child(5) {
-      align-items: center;
+      align-items: baseline;
     }
   }
-  @media ($desktop-widths){
+  @media ($desktop-widths) {
     position: relative;
     width: 100%;
     &:nth-child(1) {
@@ -68,65 +68,66 @@
   }
 }
 
-.feedback-form__legend{
+.feedback-form__legend {
   text-align:center;
   padding: 7px 0px;
   @include title();
-  &--place{
+  &--place {
     padding-bottom: 30px;
   }
-  @media ($tablet-widths){
+  @media ($tablet-widths) {
     width: 286px;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 30px;
     font-size: 21px;
     line-height: 26px;
-    &--left{
+    &--left {
       text-align: left;
       margin: 0;
       margin-bottom: 10px;
     }
-    &--line{
+    &--line {
       padding: 4px 0px;
     }
-    &--place{
+    &--place {
       padding-bottom: 20px;
     }
-    &--bottom{
+    &--bottom {
       margin-bottom: 0px;
     }
   }
   @media ($desktop-widths){
-    &--left{
+    &--left {
       padding-left: 80px;
     }
-    &--bottom{
+    &--bottom {
       padding-left: 0px;
     }
   }
 }
 
-.feedback-form__item{
+.feedback-form__item {
   width: 100%;
   padding-top: 20px;
   position: relative;
   display: block;
-    @media ($tablet-widths){
-      &--rise{
+  align-items: baseline;
+    @media ($tablet-widths) {
+      &--rise {
       padding-top: 0px;
       }
-      &--name{
+      &--name {
       padding-top: 0px;
       }
     }
 }
 
-.feedback-form__item--line{
+.feedback-form__item--line {
   padding-top: 0px;
 }
 
-.feedback-form__item--indent{
+.feedback-form__item--indent {
   margin-top: 14px;
 }
 
@@ -134,7 +135,7 @@
   padding-top: 0px;
 }
 
-.feedback-form__name{
+.feedback-form__name {
   border: 0px;
   padding: 15px 0px;
   padding-left: 22px;
@@ -144,45 +145,47 @@
   margin-left: 11px;
   border: 4px solid #f2f2f2;
   box-sizing: border-box;
-  &:hover{
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  &:hover {
     background: #e5e5e5;
     border: 4px solid #e5e5e5;
   }
   &:focus,
-  &:focus:hover{
+  &:focus:hover {
     background: white;
     border: 4px solid #e5e5e5;
   }
     @include title();
 
-    &--long{
+    &--long {
       width: 228px;
     }
-    &--short{
+    &--short {
       width: 191px;
     }
-    &--short-two{
+    &--short-two {
       width: 195px;
     }
     @media ($tablet-widths) {
-      &--long{
+      &--long {
         width: 215px;
       }
-      &--short{
+      &--short {
         width: 178px;
       }
-      &--short-two{
+      &--short-two {
         width: 182px;
       }
     }
     @media ($desktop-widths) {
-      &--long{
+      &--long {
         width: 349px;
       }
-      &--short{
+      &--short {
         width: 312px;
       }
-      &--short-two{
+      &--short-two {
         width: 317px;
       }
     }
@@ -216,11 +219,11 @@
   }
   @media ($desktop-widths) {
     margin-left: 0px;
-    &--phone{
+    &--phone {
       margin-left: 0;
       margin-right: 24px;
     }
-    &--email{
+    &--email {
       width: 148px;
       margin-right: 21px;
     }
@@ -243,12 +246,12 @@
   }
   @media ($desktop-widths) {
     order: -1;
-    left: 115px;
+    left: 107px;
     bottom: 80px;
   }
 }
 
-.feedback-form__check--nojs .feedback-form__check{
+.feedback-form__check--nojs .feedback-form__check {
    display: block;
 }
 
@@ -261,7 +264,7 @@
   }
 }
 
-.feedback-form__level{
+.feedback-form__level {
   &:first-child{
     margin-bottom: 23px;
   }
@@ -278,13 +281,13 @@
   }
 }
 
-.feedback-form__hide{
+.feedback-form__hide {
   @media ($desktop-widths) {
     display: none;
   }
 }
 
-.feedback-form__field{
+.feedback-form__field {
   position: relative;
   margin-top: 10px;
   width: 280px;
@@ -306,7 +309,7 @@
   right: 0px;
   top: 0;
 
-  &:after{
+  &:after {
     display: inline;
     position: absolute;
     left: 50%;
@@ -339,7 +342,7 @@
     display: none;
 }
 
-.feedback-form__check--nojs .feedback-form__check{
+.feedback-form__check--nojs .feedback-form__check {
    display: block;
 }
 
@@ -350,12 +353,14 @@
   border: 4px solid #f2f2f2;
   background-color: #f2f2f2;
   box-sizing: border-box;
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   &:hover{
     background: #e5e5e5;
     border: 4px solid #e5e5e5;
   }
   &:focus,
-  &:focus:hover{
+  &:focus:hover {
     background: white;
     border: 4px solid #e5e5e5;
   }
@@ -378,7 +383,7 @@
   color: #000000;
 }
 
-.feedback-form__group--feeling{
+.feedback-form__group--feeling {
   margin-bottom: 20px;
 }
 
@@ -390,7 +395,7 @@
   margin-left: 80px;
   cursor: pointer;
     @include title();
-  @media ($tablet-widths){
+  @media ($tablet-widths) {
     margin-bottom: 33px;
   }
 }
@@ -403,8 +408,8 @@
   display: block;
   position: absolute;
   content: '';
-  width: 55px;
-  height: 60px;
+  width: 59px;
+  height: 58px;
   left: -80px;
   top: -12px;
   border-radius: 50%;
@@ -417,8 +422,8 @@ input[name="emotion"]:checked + label::after {
   content: '';
   width: 22px;
   height: 22px;
-  left: -63px;
-  top: 4px;
+  left: -61px;
+  top: 6px;
   border-radius: 50%;
   background-color: #000000;
 }
@@ -435,10 +440,10 @@ input[name="emotion"]:checked + label:active::after {
   background-color: #a4a4a4;
 }
 
-.feedback-form__group--place{
+.feedback-form__group--place {
   margin-bottom: 0px;
   padding-bottom: 0px;
-  @media ($tablet-widths){
+  @media ($tablet-widths) {
     margin-top: 20px;
   }
   @media ($desktop-widths) {
@@ -458,7 +463,7 @@ input[name="emotion"]:checked + label:active::after {
   margin-left: 80px;
   margin-bottom: 55px;
     @include title();
-    @media ($tablet-widths){
+    @media ($tablet-widths) {
       margin-left: 90px;
     }
 }
@@ -506,7 +511,7 @@ input[name="place"]:checked + label:active::after {
   background-color: #d5d5d5;
 }
 
-.feedback-form__wrapper{
+.feedback-form__wrapper {
   @media ($tablet-widths) {
     width: 100%;
     display: flex;
@@ -524,7 +529,7 @@ input[name="place"]:checked + label:active::after {
   }
 }
 
-.feedback-form__item--order{
+.feedback-form__item--order {
   @media ($tablet-widths) {
     margin-top: 38px;
     width: 40%;
@@ -546,16 +551,19 @@ input[name="place"]:checked + label:active::after {
   height: 160px;
   border: none;
   padding: 15px 12px;
-  background: $lightgray;
+  background: #f2f2f2;
   color: black;
   font-size: 18spx;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   resize: none;
+  border: 4px solid #f2f2f2;
   box-sizing: border-box;
 
   &:hover {
-    background-color: #e5e5e5;;
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
   }
   &:focus,
   &:focus:hover{
@@ -573,7 +581,7 @@ input[name="place"]:checked + label:active::after {
   }
 }
 
-.feedback-form__bottom{
+.feedback-form__bottom {
   @media ($tablet-widths) {
     display: flex;
     justify-content: space-between;
@@ -583,8 +591,8 @@ input[name="place"]:checked + label:active::after {
   }
 }
 
-.feedback-form__notice{
-  @media ($mobile-widths-only){
+.feedback-form__notice {
+  @media ($mobile-widths-only) {
     display: none;
   }
   @media ($tablet-widths) {
@@ -592,7 +600,7 @@ input[name="place"]:checked + label:active::after {
   }
 }
 
-.feedback-form__btn{
+.feedback-form__btn {
   display: block;
   width: 280px;
   padding: 15px 0px;
@@ -606,11 +614,13 @@ input[name="place"]:checked + label:active::after {
   text-decoration: none;
   background-color: $blue;
   border: 0;
+  font-weight: normal;
+  font-family: "PT Sans Bold", Arial, sans-serif;
 
-  &:hover{
+  &:hover {
     background-color: #669ec0;
   }
-  &:active{
+  &:active {
     background-color: #5496bd;
       color: #88b6d1;
   }
@@ -625,7 +635,7 @@ input[name="place"]:checked + label:active::after {
 }
 
 .feedback-form__legend--line::before {
-  @media ($tablet-widths){
+  @media ($tablet-widths) {
     position: absolute;
     content: "";
     width: 125px;
@@ -634,14 +644,14 @@ input[name="place"]:checked + label:active::after {
     left: 0;
     top: 22px;
   }
-  @media ($desktop-widths){
+  @media ($desktop-widths) {
     width: 300px;
     top: 18px;
   }
 }
 
 .feedback-form__legend--line::after {
-  @media ($tablet-widths){
+  @media ($tablet-widths) {
     position: absolute;
     content: "";
     width: 125px;
@@ -650,7 +660,7 @@ input[name="place"]:checked + label:active::after {
     right: 0;
     top: 22px;
   }
-  @media ($desktop-widths){
+  @media ($desktop-widths) {
     width: 300px;
     top: 18px;
   }

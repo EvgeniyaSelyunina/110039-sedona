@@ -1,4 +1,4 @@
-.social{
+.social {
   display: flex;
   justify-content: space-around;
   align-items:center;
@@ -13,53 +13,27 @@
   }
 }
 
-.social__btn{
+.social__btns {
   position: relative;
   width: 47px;
   height: 48px;
   background-color: $blue;
   font-size: 0;
-  &:hover{
+  &:hover {
     background-color: #669ec0;
   }
-  &:active{
+  &:active {
     background-color: #5496bd;
   }
 }
 
-.social__btn--tw {
+.social__btn {
   fill: white;
   transform: translateX(-50%) translateY(-50%);
   left: 50%;
   top: 50%;
   position: absolute;
-  &:active{
-    background-color: #5496bd;
-    opacity: 2;
-    fill: #88b6d1;
-  }
-}
-
-.social__btn--fb {
-  fill: white;
-  transform: translateX(-50%) translateY(-50%);
-  left: 50%;
-  top: 50%;
-  position: absolute;
-  &:active{
-    background-color: #5496bd;
-    opacity: 2;
-    fill: #88b6d1;
-  }
-}
-
-.social__btn--tube {
-  fill: white;
-  transform: translateX(-50%) translateY(-50%);
-  left: 50%;
-  top: 50%;
-  position: absolute;
-  &:active{
+  &:active {
     background-color: #5496bd;
     opacity: 2;
     fill: #88b6d1;
