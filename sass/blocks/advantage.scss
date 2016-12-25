@@ -22,6 +22,7 @@
   &--blue {
     @media ($tablet-widths){
     height: 256px;
+    background-color:$blue;
     overflow: hidden;
     }
   }
